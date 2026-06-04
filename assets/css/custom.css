@@ -14,9 +14,24 @@
   --color-primary-950: 5 46 22;
 }
 
-/* A touch of neon glow on the header logo in dark mode. */
+/* A touch of neon glow on the hero logo in dark mode. */
 .dark img[alt="CARPE logo"] {
   filter: drop-shadow(0 0 18px rgba(34, 197, 94, 0.35));
+}
+
+/* Keep the header brand logo compact and consistent across breakpoints
+   (the theme's intrinsic 256px width can overflow small screens). */
+.main-menu img.logo {
+  height: 2.5rem;
+  width: auto;
+  max-width: none;
+  border-radius: 0.5rem;
+}
+
+/* Belt-and-suspenders: never allow horizontal scrolling on the page. */
+html,
+body {
+  overflow-x: hidden;
 }
 
 /* Clamp helper used by meeting cards. */

@@ -5,6 +5,8 @@ defaultAppearance = "dark"
 autoSwitchAppearance = false
 
 logo = "img/logo.png"
+# The logo is already a "CARPE" wordmark, so don't repeat the long title as text.
+disableTextInHeader = true
 
 enableSearch = true
 enableCodeCopy = false
@@ -14,7 +16,7 @@ enableCodeCopy = false
   showRecent = false
 
 [article]
-  showDate = true
+  showDate = false
   showDateUpdated = false
   showAuthor = false
   showBreadcrumbs = true
