@@ -1,0 +1,15 @@
+baseURL = 'https://carpe-tech.org/'
+languageCode = 'en-us'
+title = 'CARPE — Columbus Arduino & Raspberry Pi Enthusiasts'
+theme = 'blowfish'
+
+enableRobotsTXT = true
+
+# Meetings are future-dated events — include them in the build.
+buildFuture = true
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

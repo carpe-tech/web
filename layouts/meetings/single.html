@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <article class="max-w-3xl mx-auto">
+    <header class="prose dark:prose-invert max-w-none">
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-400 mb-2">
+        <a href="/meetings/" class="hover:underline">← All meetings</a>
+      </p>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">{{ .Title | emojify }}</h1>
+    </header>
+
+    <div class="mt-4 rounded-xl border border-neutral-300 dark:border-neutral-700 p-5 space-y-1.5">
+      <p>🗓️ <strong>{{ .Date.Format "Monday, January 2, 2006" }}</strong> · {{ .Date.Format "3:04 PM" }}</p>
+      {{ with .Params.location }}
+        <p>📍 {{ if $.Params.mapUrl }}<a href="{{ $.Params.mapUrl }}" class="underline hover:text-primary-500">{{ . }}</a>{{ else }}{{ . }}{{ end }}</p>
+      {{ end }}
+      {{ with .Params.meetupUrl }}
+        <p class="pt-2">
+          <a href="{{ . }}" class="inline-block rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-neutral-50 hover:bg-primary-500">RSVP on Meetup</a>
+        </p>
+      {{ end }}
+    </div>
+
+    <section class="mt-8 prose prose-lg dark:prose-invert max-w-none">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}

@@ -1,0 +1,48 @@
+# Blowfish params configuration
+
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+logo = "img/logo.png"
+
+enableSearch = true
+enableCodeCopy = false
+
+[homepage]
+  layout = "custom"
+  showRecent = false
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false
+  showBreadcrumbs = true
+  showTableOfContents = false
+  showHero = false
+  showReadingTime = false
+  showWordCount = false
+
+[list]
+  showCards = true
+  cardView = true
+  cardViewScreenWidth = false
+  groupByYear = false
+  showSummary = true
+
+[taxonomy]
+  showTermCount = true
+
+[header]
+  layout = "fixed-fill-blur"
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = true
+
+# CARPE community links — replace the "#" placeholders with real URLs.
+[links]
+  discord = "#"
+  meetup = "#"
+  facebook = "#"
+  github = "https://github.com/carpe-tech"

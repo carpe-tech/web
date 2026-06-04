@@ -1,0 +1,45 @@
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 10
+
+[[main]]
+  name = "Meetings"
+  pageRef = "meetings"
+  weight = 20
+
+[[main]]
+  name = "Get Involved"
+  pageRef = "get-involved"
+  weight = 30
+
+[[main]]
+  name = "Guidelines"
+  pageRef = "guidelines"
+  weight = 40
+
+[[main]]
+  name = "FAQ"
+  pageRef = "faq"
+  weight = 50
+
+# Footer / social links — fill in the real URLs as they become available.
+[[footer]]
+  name = "Discord"
+  url = "#"
+  weight = 10
+
+[[footer]]
+  name = "Meetup"
+  url = "#"
+  weight = 20
+
+[[footer]]
+  name = "Facebook"
+  url = "#"
+  weight = 30
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/carpe-tech"
+  weight = 40

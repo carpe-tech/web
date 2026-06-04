@@ -1,0 +1,43 @@
+{{/* Renders the next upcoming meeting (or the most recent past one as a fallback). */}}
+{{ $meetings := where site.RegularPages "Section" "meetings" }}
+{{ $upcoming := sort (where $meetings "Date" ">=" now) "Date" "asc" }}
+{{ $past := sort (where $meetings "Date" "<" now) "Date" "desc" }}
+{{ $next := "" }}
+{{ $isUpcoming := false }}
+{{ if gt (len $upcoming) 0 }}
+  {{ $next = index $upcoming 0 }}
+  {{ $isUpcoming = true }}
+{{ else if gt (len $past) 0 }}
+  {{ $next = index $past 0 }}
+{{ end }}
+
+{{ with $next }}
+  <div class="rounded-2xl border border-primary-500/40 bg-primary-600/5 dark:bg-primary-400/5 p-6 shadow-sm">
+    <div class="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-400">
+      <span class="inline-block h-2.5 w-2.5 rounded-full bg-primary-500 {{ if $isUpcoming }}animate-pulse{{ end }}"></span>
+      {{ if $isUpcoming }}Next meetup{{ else }}Most recent meetup{{ end }}
+    </div>
+    <h3 class="mt-2 text-2xl font-bold">
+      <a href="{{ .RelPermalink }}" class="hover:text-primary-500">{{ .Title | emojify }}</a>
+    </h3>
+    <p class="mt-1 text-base text-neutral-500 dark:text-neutral-300">
+      🗓️ {{ .Date.Format "Monday, January 2, 2006 · 3:04 PM" }}
+    </p>
+    {{ with .Params.location }}
+      <p class="mt-1 text-base text-neutral-500 dark:text-neutral-300">
+        📍 {{ if $.Params.mapUrl }}<a href="{{ $.Params.mapUrl }}" class="underline hover:text-primary-500">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+      </p>
+    {{ end }}
+    <div class="mt-4 flex flex-wrap gap-3">
+      {{ with .Params.meetupUrl }}
+        <a href="{{ . }}" class="rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-neutral-50 hover:bg-primary-500">RSVP on Meetup</a>
+      {{ end }}
+      <a href="{{ .RelPermalink }}" class="rounded-lg border border-primary-500/50 px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-500/10 dark:text-primary-400">Details</a>
+      <a href="/meetings/" class="rounded-lg border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-500/10 dark:border-neutral-600 dark:text-neutral-300">All meetings</a>
+    </div>
+  </div>
+{{ else }}
+  <div class="rounded-2xl border border-neutral-300 dark:border-neutral-600 p-6">
+    <p class="text-neutral-500 dark:text-neutral-300">Our next meetup will be posted here soon — check <a class="underline hover:text-primary-500" href="{{ site.Params.links.meetup }}">Meetup</a> for the latest schedule.</p>
+  </div>
+{{ end }}

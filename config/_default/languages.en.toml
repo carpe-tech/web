@@ -1,0 +1,11 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "CARPE — Columbus Arduino & Raspberry Pi Enthusiasts"
+
+[params]
+  description = "CARPE is a Columbus, Ohio community of makers and tinkerers building with Arduino, Raspberry Pi, microcontrollers, retro tech, and creative electronics. We meet in person twice a month."
+
+[params.author]
+  name = "CARPE"
+  headline = "Columbus Arduino & Raspberry Pi Enthusiasts"

@@ -1,0 +1,13 @@
+{{/* A single meeting card. Context is the meeting page. */}}
+<a href="{{ .RelPermalink }}" class="block rounded-xl border border-neutral-300 dark:border-neutral-700 p-5 transition hover:border-primary-500/60 hover:shadow-sm">
+  <p class="text-sm font-semibold text-primary-600 dark:text-primary-400">
+    {{ .Date.Format "Mon · Jan 2, 2006 · 3:04 PM" }}
+  </p>
+  <h3 class="mt-1 text-lg font-bold">{{ .Title | emojify }}</h3>
+  {{ with .Params.location }}
+    <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-300">📍 {{ . }}</p>
+  {{ end }}
+  {{ with .Summary }}
+    <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-300 line-clamp-2">{{ . | plainify }}</p>
+  {{ end }}
+</a>

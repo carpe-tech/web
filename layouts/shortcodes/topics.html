@@ -1,0 +1,8 @@
+{{/* Topic "pills". Usage: {{< topics >}} (uses defaults) or {{< topics "Arduino,Raspberry Pi" >}} */}}
+{{ $default := "Arduino,Raspberry Pi,ESP32,IoT,Retro Tech,SDR,Electronics,Sensors,AI at the Edge" }}
+{{ $list := .Get 0 | default $default }}
+<div class="not-prose my-4 flex flex-wrap gap-2">
+  {{ range split $list "," }}
+    <span class="rounded-full border border-primary-500/40 bg-primary-500/10 px-3 py-1 text-sm font-medium text-primary-700 dark:text-primary-300">{{ trim . " " }}</span>
+  {{ end }}
+</div>
