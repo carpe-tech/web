@@ -21,7 +21,7 @@
       <a href="{{ .RelPermalink }}" class="hover:text-primary-500">{{ .Title | emojify }}</a>
     </h3>
     <p class="mt-1 text-base text-neutral-500 dark:text-neutral-300">
-      🗓️ {{ .Date.Format "Monday, January 2, 2006 · 3:04 PM" }}
+      🗓️ {{ .Date.Format "Monday, January 2, 2006 · 3:04 PM" }}{{ with .Params.endTime }} – {{ . }}{{ end }}
     </p>
     {{ with .Params.location }}
       <p class="mt-1 text-base text-neutral-500 dark:text-neutral-300">

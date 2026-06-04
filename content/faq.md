@@ -30,7 +30,8 @@ It varies. We rotate locations around Columbus based on room availability, so al
 
 ## When do you meet?
 
-The **2nd and 4th Tuesdays** of the month, usually in the evening.
+Twice a month, usually in the evening — most often the **2nd and 4th Tuesdays**, though it
+shifts occasionally. Check [upcoming meetings](/meetings/) for exact dates.
 
 ## Can I give a talk or show a project?
 
