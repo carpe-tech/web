@@ -22,9 +22,14 @@
 /* Keep the header brand logo compact and consistent across breakpoints
    (the theme's intrinsic 256px width can overflow small screens). */
 .main-menu img.logo {
-  height: 2.5rem;
+  height: 4rem;
   width: auto;
   max-width: none;
+}
+@media (min-width: 768px) {
+  .main-menu img.logo {
+    height: 5.5rem;
+  }
 }
 
 /* Belt-and-suspenders: never allow horizontal scrolling on the page. */
