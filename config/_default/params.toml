@@ -45,6 +45,6 @@ enableCodeCopy = false
 # CARPE community links — replace the "#" placeholders with real URLs.
 [links]
   discord = "#"
-  meetup = "#"
+  meetup = "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/"
   facebook = "#"
   github = "https://github.com/carpe-tech"
