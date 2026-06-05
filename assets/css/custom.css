@@ -25,7 +25,6 @@
   height: 2.5rem;
   width: auto;
   max-width: none;
-  border-radius: 0.5rem;
 }
 
 /* Belt-and-suspenders: never allow horizontal scrolling on the page. */
