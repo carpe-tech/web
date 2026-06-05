@@ -32,10 +32,17 @@
   }
 }
 
-/* Belt-and-suspenders: never allow horizontal scrolling on the page. */
-html,
-body {
-  overflow-x: hidden;
+/* Freeze-pane header: keep the bar solid at all scroll positions so page
+   content scrolls cleanly underneath instead of bleeding through. The theme
+   fades this panel in with scroll (opacity = scroll/300) and only tints it
+   30%, which let text show through — override both. */
+#menu-blur {
+  opacity: 1 !important;
+  background-color: rgb(var(--color-neutral-800) / 0.95);
+}
+.light #menu-blur,
+html:not(.dark) #menu-blur {
+  background-color: rgb(var(--color-neutral-50) / 0.95);
 }
 
 /* Clamp helper used by meeting cards. */
