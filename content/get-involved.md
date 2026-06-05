@@ -1,6 +1,6 @@
 ---
 title: "Get Involved"
-description: "Ways to connect with CARPE between meetings — Discord, Meetup, Facebook, and GitHub."
+description: "Ways to connect with CARPE between meetings — Discord, Meetup, and GitHub."
 ---
 
 The easiest way to get involved is to **show up to a meetup** — but here's where to find us
@@ -9,7 +9,6 @@ in between:
 - **💬 Discord** — our home base for day-to-day chat, questions, and project threads.
   [Join the server](#).
 - **📅 Meetup** — where we post dates and you can RSVP. [See upcoming events](https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/).
-- **👥 Facebook** — announcements and project sharing. [Find the group](#).
 - **🐙 GitHub** — where this website and other group projects live.
   [github.com/carpe-tech](https://github.com/carpe-tech).
 
