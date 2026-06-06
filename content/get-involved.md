@@ -20,5 +20,6 @@ Discord or grab one of the organizers at a meeting.
 
 ## Members' projects
 
-We're putting together a spot to feature what members are building — and, down the road,
-a way to host member project pages under CARPE. More on that soon.
+Got a project site or builds to show off? We feature members' project links on our
+[Links](/links/) page. Just ask in [Discord](https://discord.gg/JjqR5dPYem) or share it at
+one of the meetings, and we'll add yours.
