@@ -32,6 +32,22 @@
   }
 }
 
+/* Homepage section rhythm. Blowfish ships a precompiled Tailwind that only
+   includes a small subset of spacing utilities (gap-1 through gap-4, etc.), so
+   classes like gap-24 silently do nothing. Drive the rhythm from real CSS. */
+.home-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+  padding-block: 3rem;
+}
+@media (min-width: 640px) {
+  .home-stack {
+    gap: 6rem;
+    padding-block: 5rem;
+  }
+}
+
 /* Freeze-pane header: keep the bar solid at all scroll positions so page
    content scrolls cleanly underneath instead of bleeding through. The theme
    fades this panel in with scroll (opacity = scroll/300) and only tints it
