@@ -18,6 +18,9 @@ other communities worth checking out, plus projects our members are building.
 - **[East Columbus Maker Meetup](https://eastcolumbusmakermeetup.org/)** — Local Makers
   gathering monthly to connect, create, and share projects, swap ideas, and pick up new
   skills. CNC, CAD, and 3D printing are frequent topics.
+- **[Midwest Hard Tech](https://midwesthardtech.substack.com/)** — A newsletter by Mike
+  Liang building community for hardware, hard tech, and deep tech builders and entrepreneurs
+  across the Midwest.
 
 ## Regional Events
 
