@@ -17,7 +17,7 @@ other communities worth checking out, plus projects our members are building.
   and open to all.
 - **[East Columbus Maker Meetup](https://eastcolumbusmakermeetup.org/)** — Local Makers
   gathering monthly to connect, create, and share projects, swap ideas, and pick up new
-  skills.
+  skills. CNC, CAD, and 3D printing are frequent topics.
 
 ## Regional Events
 
