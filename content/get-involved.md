@@ -7,7 +7,7 @@ The easiest way to get involved is to **show up to a meetup** — but here's whe
 in between:
 
 - **💬 Discord** — our home base for day-to-day chat, questions, and project threads.
-  [Join the server](#).
+  [Join the server](https://discord.gg/JjqR5dPYem).
 - **📅 Meetup** — where we post dates and you can RSVP. [See upcoming events](https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/).
 - **🐙 GitHub** — where this website and other group projects live.
   [github.com/carpe-tech](https://github.com/carpe-tech).

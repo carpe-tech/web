@@ -26,7 +26,7 @@
 # Footer / social links — fill in the real URLs as they become available.
 [[footer]]
   name = "Discord"
-  url = "#"
+  url = "https://discord.gg/JjqR5dPYem"
   weight = 10
 
 [[footer]]
