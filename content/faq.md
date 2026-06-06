@@ -35,8 +35,9 @@ shifts occasionally. Check [upcoming meetings](/meetings/) for exact dates.
 
 ## Can I give a talk or show a project?
 
-Please do! Talks and demos can be short and informal — see
-[Get Involved](/get-involved/).
+Please do! Talks and demos can be short and informal — just mention it in
+[Discord](https://discord.gg/JjqR5dPYem) or to an organizer at a meeting. See the
+[Meetings](/meetings/) page for more.
 
 ## I have my own projects site / want to share my builds. Can CARPE feature them?
 

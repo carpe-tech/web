@@ -30,5 +30,31 @@
         </div>
       </section>
     {{ end }}
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold border-b border-neutral-300 dark:border-neutral-700 pb-2">Get involved between meetings</h2>
+      <p class="mt-4 text-neutral-500 dark:text-neutral-300">
+        Showing up is the main thing — but here's where to find us in between:
+      </p>
+      <div class="mt-5">
+        {{ partial "community-links.html" . }}
+      </div>
+
+      <div class="prose dark:prose-invert max-w-none mt-8">
+        <h3>Want to give a talk or demo?</h3>
+        <p>
+          We love these, and they don't need to be polished — five minutes on a project
+          you're proud of, something you just learned, or a problem you're stuck on. Mention
+          it in <a href="{{ site.Params.links.discord }}" target="_blank" rel="noreferrer">Discord</a>
+          or grab an organizer at a meeting.
+        </p>
+        <h3>Members' projects</h3>
+        <p>
+          Got a project site or builds to show off? We feature members' project links on our
+          <a href="/links/">Links</a> page — just ask in Discord or share it at a meeting,
+          and we'll add yours.
+        </p>
+      </div>
+    </section>
   </article>
 {{ end }}

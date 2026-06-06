@@ -27,4 +27,4 @@ hardware — or you're just curious what's possible — you belong here.
 - **Cost:** free. No membership, no dues, no registration.
 
 Ready to come by? Check out [upcoming meetings](/meetings/) or
-[find us online](/get-involved/).
+[say hello in Discord](https://discord.gg/JjqR5dPYem).
