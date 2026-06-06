@@ -19,7 +19,21 @@ other communities worth checking out, plus projects our members are building.
   east side gathering monthly to connect, create, and share projects, swap ideas, and pick
   up new skills.
 
-## Member Projects
+## Regional Events
+
+Worth a road trip — conventions and festivals around the Midwest:
+
+- **[Vintage Computer Festival Midwest](https://vcfmw.org/)** — A yearly celebration of
+  computer history in Schaumburg, Illinois (near Chicago) each September, with exhibits,
+  speakers, and a roomful of vintage hardware.
+- **[Tandy Assembly](https://www.tandyassembly.com/)** — An annual gathering for fans of
+  Tandy/Radio Shack computing (TRS-80 and friends) — exhibits, talks, auctions, and
+  technical sessions. Held in Cincinnati, Ohio each October.
+- **[CORGSCon](https://www.corgscon.com/)** — Columbus's long-running retro gaming
+  convention at the Ohio Expo Center: a vendor hall, special guests, and plenty of classic
+  video games.
+
+## Member Projects & Portfolios
 
 Building something cool? We'd love to feature it here — mention it in
 [Discord](https://discord.gg/JjqR5dPYem) or grab an organizer at a meeting.
