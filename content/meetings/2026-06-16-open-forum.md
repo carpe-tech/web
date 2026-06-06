@@ -1,5 +1,5 @@
 ---
-title: "June Meetup — Open forum & show your project"
+title: "June Meeting — Open forum & show your project"
 date: 2026-06-16T18:30:00-04:00
 endTime: "8:30 PM"
 location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"

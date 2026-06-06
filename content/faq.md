@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: "Common questions about CARPE meetups."
+description: "Common questions about CARPE meetings."
 ---
 
 ## Do I need any experience?
@@ -25,7 +25,7 @@ it's not required. Drop-ins are always welcome.
 ## Where do you meet?
 
 It varies. We rotate locations around Columbus based on room availability, so always
-**check the specific meetup** for its venue before heading out. See
+**check the specific meeting** for its venue before heading out. See
 [upcoming meetings](/meetings/).
 
 ## When do you meet?

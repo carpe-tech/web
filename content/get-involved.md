@@ -3,7 +3,7 @@ title: "Get Involved"
 description: "Ways to connect with CARPE between meetings — Discord, Meetup, and GitHub."
 ---
 
-The easiest way to get involved is to **show up to a meetup** — but here's where to find us
+The easiest way to get involved is to **show up to a meeting** — but here's where to find us
 in between:
 
 - **💬 Discord** — our home base for day-to-day chat, questions, and project threads.
@@ -16,7 +16,7 @@ in between:
 
 We love these, and they don't need to be polished. Five minutes on a project you're proud
 of, a thing you just learned, or a problem you're stuck on — all great. Mention it in
-Discord or grab one of the organizers at a meetup.
+Discord or grab one of the organizers at a meeting.
 
 ## Members' projects
 

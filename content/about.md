@@ -1,6 +1,6 @@
 ---
 title: "About CARPE"
-description: "Who we are and what a CARPE meetup is like."
+description: "Who we are and what a CARPE meeting is like."
 ---
 
 **CARPE** — the **C**olumbus **A**rduino & **R**aspberry **P**i **E**nthusiasts — is an
@@ -21,9 +21,9 @@ hardware — or you're just curious what's possible — you belong here.
 ## The basics
 
 - **When:** twice a month — usually the 2nd and 4th Tuesdays, in the evening. Check each
-  meetup for the exact date.
+  meeting for the exact date.
 - **Where:** it varies — while we look for a permanent home, we meet at public library
-  facilities based on availability, so always check the specific meetup for its location.
+  facilities based on availability, so always check the specific meeting for its location.
 - **Cost:** free. No membership, no dues, no registration.
 
 Ready to come by? Check out [upcoming meetings](/meetings/) or

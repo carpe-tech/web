@@ -15,7 +15,7 @@
   <div class="rounded-3xl bg-primary-500/[0.06] dark:bg-primary-400/[0.07] px-6 py-10 sm:px-10">
     <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-primary-600 dark:text-primary-400">
       <span class="inline-block h-2 w-2 rounded-full bg-primary-500 {{ if $isUpcoming }}animate-pulse{{ end }}"></span>
-      {{ if $isUpcoming }}Next meetup{{ else }}Most recent meetup{{ end }}
+      {{ if $isUpcoming }}Next meeting{{ else }}Most recent meeting{{ end }}
     </p>
     <h3 class="mt-4 text-2xl sm:text-3xl font-bold">
       <a href="{{ .RelPermalink }}" class="hover:text-primary-500">{{ .Title | emojify }}</a>
@@ -38,7 +38,7 @@
   </div>
 {{ else }}
   <p class="text-neutral-500 dark:text-neutral-300">
-    Our next meetup will be posted here soon — check
+    Our next meeting will be posted here soon — check
     <a class="underline hover:text-primary-500" href="{{ site.Params.links.meetup }}">Meetup</a> for the latest schedule.
   </p>
 {{ end }}

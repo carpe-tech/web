@@ -26,7 +26,7 @@ someone's project, and treat venues and equipment with care so we're invited bac
 
 We play with mains power, lithium batteries, RF, lasers, and other things that can bite.
 Know what you're doing — or ask someone who does — before you do it. Don't bring anything
-to a meetup you wouldn't want your most safety-conscious friend to see.
+to a meeting you wouldn't want your most safety-conscious friend to see.
 
 ## When in doubt
 
