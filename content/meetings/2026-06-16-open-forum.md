@@ -1,11 +1,14 @@
 ---
 title: "June Meeting — Open forum & show your project"
 date: 2026-06-16T18:30:00-04:00
-endTime: "8:30 PM"
+endDate: 2026-06-16T20:30:00-04:00
 location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"
 mapUrl: "https://www.google.com/maps/search/?api=1&query=Worthington+Park+Library%2C+1389+Worthington+Centre+Dr%2C+Worthington%2C+OH"
 meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/314782659"
 draft: false
+outputs:
+  - HTML
+  - ICS
 ---
 
 Bring your Raspberry Pi, Arduino, microcontroller, or any other electronic project and

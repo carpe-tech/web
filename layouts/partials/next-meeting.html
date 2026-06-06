@@ -17,19 +17,24 @@
       <a href="{{ .RelPermalink }}" class="hover:text-primary-500">{{ .Title | emojify }}</a>
     </h3>
     <p class="mt-4 text-base text-neutral-500 dark:text-neutral-300">
-      🗓️ {{ .Date.Format "Monday, January 2, 2006 · 3:04 PM" }}{{ with .Params.endTime }} – {{ . }}{{ end }}
+      🗓️ {{ .Date.Format "Monday, January 2, 2006 · 3:04 PM" }}{{ with .Params.endDate }} – {{ (time .).Format "3:04 PM" }}{{ end }}
     </p>
     {{ with .Params.location }}
       <p class="mt-1 text-base text-neutral-500 dark:text-neutral-300">
         📍 {{ if $.Params.mapUrl }}<a href="{{ $.Params.mapUrl }}" class="underline decoration-dotted underline-offset-2 hover:text-primary-500">{{ . }}</a>{{ else }}{{ . }}{{ end }}
       </p>
     {{ end }}
-    <p class="mt-4 text-base">
+    <p class="mt-1 text-base">
       📄 <a href="{{ .RelPermalink }}" class="text-primary-600 hover:underline dark:text-primary-400">Meeting details</a>
     </p>
     {{ with .Params.meetupUrl }}
       <p class="mt-1 text-base">
         🎟️ <a href="{{ . }}" class="text-primary-600 hover:underline dark:text-primary-400">RSVP on Meetup</a>
+      </p>
+    {{ end }}
+    {{ with .OutputFormats.Get "ICS" }}
+      <p class="mt-1 text-base">
+        📅 <a href="{{ .RelPermalink }}" class="text-primary-600 hover:underline dark:text-primary-400">Add to my Calendar</a>
       </p>
     {{ end }}
   </div>

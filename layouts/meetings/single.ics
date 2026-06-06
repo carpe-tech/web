@@ -1,0 +1,21 @@
+{{- /* iCalendar event for a CARPE meeting. Text fields escape \ , ; per RFC 5545. */ -}}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CARPE//carpe-tech.org//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:{{ .File.UniqueID }}@carpe-tech.org
+DTSTAMP:{{ now.UTC.Format "20060102T150405Z" }}
+DTSTART:{{ .Date.UTC.Format "20060102T150405Z" }}
+{{- with .Params.endDate }}
+DTEND:{{ (time .).UTC.Format "20060102T150405Z" }}
+{{- end }}
+SUMMARY:{{ .Title | replaceRE `([\\,;])` `\${1}` | replaceRE `\r?\n` ` ` }}
+{{- with .Params.location }}
+LOCATION:{{ . | replaceRE `([\\,;])` `\${1}` }}
+{{- end }}
+DESCRIPTION:{{ .Summary | plainify | htmlUnescape | replaceRE `([\\,;])` `\${1}` | replaceRE `\r?\n` `\n` }} Details: {{ .Permalink }}
+URL:{{ .Permalink }}
+END:VEVENT
+END:VCALENDAR

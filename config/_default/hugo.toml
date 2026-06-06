@@ -13,3 +13,13 @@ buildFuture = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+# iCalendar output for meetings (the "Add to my Calendar" download).
+# Enabled per-page via `outputs: [HTML, ICS]` in meeting front matter.
+[mediaTypes."text/calendar"]
+  suffixes = ["ics"]
+
+[outputFormats.ICS]
+  mediaType = "text/calendar"
+  isPlainText = true
+  rel = "alternate"
