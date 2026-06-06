@@ -3,8 +3,8 @@ title: "Topics"
 description: "What CARPE members tinker with — microcontrollers, single-board computers, LEDs, sensors, robotics, retro tech, and more."
 ---
 
-CARPE is deliberately broad — if it blinks, beeps, senses, moves, or computes, someone here
-is probably into it. A sampling of what turns up at meetings:
+If it blinks, beeps, senses, moves, or computes, someone here is probably into it. A
+sampling of what turns up at meetings:
 
 ## Microcontrollers
 
@@ -34,7 +34,8 @@ and grab.
 ## Retro Tech & Retro Computing
 
 Vintage machines, 8-bit micros, old peripherals, and giving classic hardware new life — or
-emulating it on new hardware.
+emulating it on new hardware. Want to talk shop with assembly programmers? You'll find them
+here.
 
 ## Electronics & Soldering
 
