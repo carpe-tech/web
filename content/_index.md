@@ -6,3 +6,5 @@ description: "Columbus Arduino & Raspberry Pi Enthusiasts — a local community 
 ## Stuff we geek out on
 
 {{< topics >}}
+
+Curious about any of these? [Take a deep dive into our topics →](/topics/)
