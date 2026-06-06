@@ -15,9 +15,9 @@ other communities worth checking out, plus projects our members are building.
   vintage computing in Columbus." Workshops, demos, presentations, and social gatherings
   around retro and vintage computing, meeting roughly monthly in the Hilliard area. Free
   and open to all.
-- **[East Columbus Maker Meetup](https://eastcolumbusmakermeetup.org/)** — Makers on the
-  east side gathering monthly to connect, create, and share projects, swap ideas, and pick
-  up new skills.
+- **[East Columbus Maker Meetup](https://eastcolumbusmakermeetup.org/)** — Local Makers
+  gathering monthly to connect, create, and share projects, swap ideas, and pick up new
+  skills.
 
 ## Regional Events
 
