@@ -7,3 +7,11 @@ We meet twice a month — **typically the 2nd and 4th Tuesdays**, though it shif
 then with room availability. Our location moves around too, so **check each meetup below
 for its date and venue** before you head out.
 [Meetup](https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/) is our source of truth for dates and RSVPs.
+
+## What a meetup looks like
+
+- **Show & tell** — bring whatever you're working on, finished or not. Half-built and
+  gloriously broken is encouraged.
+- **Talks & demos** — short, informal presentations on whatever someone's excited about.
+  Want to give one? We'd love that.
+- **Open hang-out** — time to chat, troubleshoot, and meet other local makers.

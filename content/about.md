@@ -18,14 +18,6 @@ Everyone. Total beginners who've never plugged in a breadboard are just as welco
 who've been soldering since the '70s. If you like making things with small, cheap, powerful
 hardware — or you're just curious what's possible — you belong here.
 
-## What a meetup looks like
-
-- **Show & tell** — bring whatever you're working on, finished or not. Half-built and
-  gloriously broken is encouraged.
-- **Talks & demos** — short, informal presentations on whatever someone's excited about.
-  Want to give one? We'd love that.
-- **Open hang-out** — time to chat, troubleshoot, and meet other local makers.
-
 ## The basics
 
 - **When:** twice a month — usually the 2nd and 4th Tuesdays, in the evening. Check each
