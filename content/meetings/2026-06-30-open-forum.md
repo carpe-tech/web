@@ -1,10 +1,10 @@
 ---
 title: "June Meeting — Open forum & show your project"
-date: 2026-06-16T18:30:00-04:00
-endDate: 2026-06-16T20:30:00-04:00
-location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"
-mapUrl: "https://www.google.com/maps/search/?api=1&query=Worthington+Park+Library%2C+1389+Worthington+Centre+Dr%2C+Worthington%2C+OH"
-meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/314782659"
+date: 2026-06-30T18:30:00-04:00
+endDate: 2026-06-30T20:30:00-04:00
+location: "Old Worthington Library — Wolf Study Room · 820 High St, Worthington, OH"
+mapUrl: "https://maps.app.goo.gl/KLVEUwAhkTrzbt128"
+meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/315410503"
 draft: false
 outputs:
   - HTML
@@ -25,5 +25,5 @@ a few simple sensors. No pressure, no experience required — just an interest i
 and building.
 
 While we keep looking for a more permanent home for the group, we're meeting at public
-library facilities based on availability. **This session is at the Worthington Park
-Library, in the Olentangy Meeting Room.**
+library facilities based on availability. **This session is at the Old Worthington
+Library, in the Wolf Study Room.**
