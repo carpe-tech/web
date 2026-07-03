@@ -39,6 +39,9 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  /* The fixed-fill-blur header reserves a 148px spacer, but our menu bar is
+     only ~88px tall — pull the hero up to close about half that dead band. */
+  margin-top: -2.5rem;
   padding-block: 0.5rem 3rem;
 }
 @media (min-width: 640px) {
