@@ -22,14 +22,14 @@
     </p>
   </section>
 
+  {{/* ---- Next meeting (surfaced up top so it's the first thing you see) ---- */}}
+  <section>
+    {{ partial "next-meeting.html" . }}
+  </section>
+
   {{/* ---- What we're about + topics (from _index.md) ---- */}}
   <section class="prose prose-lg dark:prose-invert prose-headings:mt-10 max-w-none">
     {{ .Content }}
-  </section>
-
-  {{/* ---- Next meeting ---- */}}
-  <section>
-    {{ partial "next-meeting.html" . }}
   </section>
 
   {{/* ---- Get involved (Discord lives here now) ---- */}}
