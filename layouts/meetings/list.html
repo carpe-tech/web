@@ -1,8 +1,15 @@
 {{ define "main" }}
   <article class="max-w-full">
+    {{/* Split the section content on the summary divider: opener goes above the
+         Upcoming list (so the next meeting is visible without scrolling); the
+         "What a meeting looks like" part renders just below it. */}}
+    {{ $parts := split .RawContent "<!--more-->" }}
+    {{ $opener := index $parts 0 }}
+    {{ $rest := "" }}{{ if gt (len $parts) 1 }}{{ $rest = index $parts 1 }}{{ end }}
+
     <header class="prose dark:prose-invert max-w-none">
       <h1 class="text-4xl font-extrabold">{{ .Title | emojify }}</h1>
-      {{ .Content }}
+      {{ .RenderString $opener }}
     </header>
 
     {{ $meetings := where site.RegularPages "Section" "meetings" }}
@@ -21,6 +28,15 @@
         </p>
       {{ end }}
     </section>
+
+    {{ with $rest }}
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold border-b border-neutral-300 dark:border-neutral-700 pb-2">What a meeting looks like</h2>
+        <div class="prose dark:prose-invert max-w-none mt-5">
+          {{ $.RenderString . }}
+        </div>
+      </section>
+    {{ end }}
 
     {{ if gt (len $past) 0 }}
       <section class="mt-12">

@@ -8,7 +8,7 @@ then with room availability. Our location moves around too, so **check each meet
 for its date and venue** before you head out.
 [Meetup](https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/) is our source of truth for dates and RSVPs.
 
-## What a meeting looks like
+<!--more-->
 
 - **Show & tell** — bring whatever you're working on, finished or not. Half-built and
   gloriously broken is encouraged.
