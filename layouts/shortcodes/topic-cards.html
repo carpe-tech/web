@@ -1,0 +1,45 @@
+{{/*
+  Topic cards. Reads data/topics.yaml and renders a responsive card grid
+  (image + title + blurb) followed by an image-credits list for attribution.
+  Images live in assets/img/topics/ and are cropped/optimized at build time.
+  Usage: {{< topic-cards >}}
+*/}}
+<div class="not-prose mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {{ range $t := site.Data.topics.topics }}
+    <div class="flex flex-col overflow-hidden rounded-xl border border-neutral-300 bg-neutral-50 transition hover:border-primary-500/60 hover:shadow-sm dark:border-neutral-700 dark:bg-neutral-800">
+      {{ with resources.Get $t.image }}
+        {{ $img := .Fill "800x500 Center webp q82" }}
+        <img
+          src="{{ $img.RelPermalink }}"
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}"
+          alt="{{ $t.title }}"
+          loading="lazy"
+          decoding="async"
+          class="aspect-[8/5] w-full object-cover" />
+      {{ end }}
+      <div class="flex flex-1 flex-col p-5">
+        <h3 class="text-lg font-bold text-neutral-800 dark:text-neutral-100">{{ $t.title }}</h3>
+        <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-300">{{ $t.blurb }}</p>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+<div class="not-prose mt-10 border-t border-neutral-200 pt-4 dark:border-neutral-800">
+  <h2 class="text-sm font-semibold text-neutral-500 dark:text-neutral-400">Image credits</h2>
+  <ul class="mt-2 space-y-1 text-xs text-neutral-400 dark:text-neutral-500">
+    {{ range $t := site.Data.topics.topics }}
+      {{ with $t.credit }}
+        <li>
+          <span class="text-neutral-500 dark:text-neutral-400">{{ $t.title }}:</span>
+          {{ if .source_url }}<a href="{{ .source_url }}" class="underline hover:text-primary-500" target="_blank" rel="noopener noreferrer">"{{ .title }}"</a>{{ else }}"{{ .title }}"{{ end }}
+          by
+          {{ if .creator_url }}<a href="{{ .creator_url }}" class="underline hover:text-primary-500" target="_blank" rel="noopener noreferrer">{{ .creator }}</a>{{ else }}{{ .creator }}{{ end }},
+          licensed under
+          {{ if .license_url }}<a href="{{ .license_url }}" class="underline hover:text-primary-500" target="_blank" rel="noopener noreferrer">{{ .license }}</a>{{ else }}{{ .license }}{{ end }}.
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>
