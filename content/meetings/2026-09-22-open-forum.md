@@ -2,9 +2,9 @@
 title: "September Meeting — Open forum & show your project"
 date: 2026-09-22T18:30:00-04:00
 endDate: 2026-09-22T20:30:00-04:00
-location: "Location TBD"
-mapUrl: ""
-meetupUrl: ""
+location: "Northwest Library — Trillium Meeting Room"
+mapUrl: "https://maps.app.goo.gl/Z634mLiFrtNb5N8t5"
+meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/315888691"
 draft: false
 outputs:
   - HTML
@@ -25,5 +25,4 @@ a few simple sensors. No pressure, no experience required — just an interest i
 and building. **Want to try a kit? Bring a laptop** — we'll help you get it set up.
 
 While we keep looking for a more permanent home for the group, we're meeting at public
-library facilities based on availability. **The location for this session is still being
-finalized — check back soon or watch Meetup for the announcement.**
+library facilities based on availability. **This session is at the Northwest Library, in the Trillium Meeting Room.**
