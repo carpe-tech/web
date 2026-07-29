@@ -2,9 +2,9 @@
 title: "August Meeting — Open forum & show your project"
 date: 2026-08-25T18:30:00-04:00
 endDate: 2026-08-25T20:30:00-04:00
-location: "Location TBD"
-mapUrl: ""
-meetupUrl: ""
+location: "Karl Road Branch Library — Meeting Room 3 · 5590 Karl Rd, Columbus, OH"
+mapUrl: "https://www.google.com/maps/search/?api=1&query=Karl+Road+Branch+Library%2C+5590+Karl+Rd%2C+Columbus%2C+OH"
+meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/315888534"
 draft: false
 outputs:
   - HTML
@@ -25,5 +25,5 @@ a few simple sensors. No pressure, no experience required — just an interest i
 and building. **Want to try a kit? Bring a laptop** — we'll help you get it set up.
 
 While we keep looking for a more permanent home for the group, we're meeting at public
-library facilities based on availability. **The location for this session is still being
-finalized — check back soon or watch Meetup for the announcement.**
+library facilities based on availability. **This session is at the Karl Road Branch
+Library, in Meeting Room 3.**
