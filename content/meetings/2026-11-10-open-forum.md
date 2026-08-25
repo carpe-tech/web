@@ -4,6 +4,7 @@ date: 2026-11-10T18:30:00-05:00
 endDate: 2026-11-10T20:30:00-05:00
 location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"
 mapUrl: "https://www.google.com/maps/search/?api=1&query=Worthington+Park+Library%2C+1389+Worthington+Centre+Dr%2C+Worthington%2C+OH"
+meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/316274450"
 draft: false
 outputs:
   - HTML
