@@ -17,6 +17,7 @@
           <a href="{{ . }}" class="inline-block rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-neutral-50 hover:bg-primary-500">RSVP on Meetup</a>
         </p>
       {{ end }}
+      {{ partial "add-to-calendar.html" (dict "page" $ "class" "pt-1") }}
     </div>
 
     <section class="mt-8 prose prose-lg dark:prose-invert max-w-none">

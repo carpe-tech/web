@@ -1,0 +1,23 @@
+{{/* "Add to my Calendar" link for a meeting's generated .ics file.
+
+     Call with: (dict "page" <meeting page> "class" "<classes for the wrapper>")
+
+     The download attribute matters: Hugo names every ICS file "index.ics", so
+     without it a visitor ends up with index.ics (or index-3.ics) in Downloads
+     with no idea what it is. This saves it as carpe-YYYY-MM-DD.ics instead.
+
+     The label carries the date for the same reason — it makes clear what you're
+     adding before you click, and which meeting the file is for.
+
+     Renders nothing when the page has no ICS output (i.e. front matter is
+     missing `outputs: [HTML, ICS]`), rather than leaving an empty wrapper.
+*/ -}}
+{{- $page := .page -}}
+{{- $class := .class | default "" -}}
+{{- with $page.OutputFormats.Get "ICS" -}}
+  <p class="{{ $class }}">
+    <a href="{{ .RelPermalink }}"
+       download="carpe-{{ $page.Date.Format "2006-01-02" }}.ics"
+       class="meeting-cal-link">📅 Add to my Calendar — {{ $page.Date.Format "Mon, Jan 2" }}</a>
+  </p>
+{{- end -}}

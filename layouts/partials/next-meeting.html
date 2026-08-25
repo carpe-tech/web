@@ -32,11 +32,7 @@
         🎟️ <a href="{{ . }}" class="text-primary-600 hover:underline dark:text-primary-400">RSVP on Meetup</a>
       </p>
     {{ end }}
-    {{ with .OutputFormats.Get "ICS" }}
-      <p class="mt-1 text-base">
-        📅 <a href="{{ .RelPermalink }}" class="text-primary-600 hover:underline dark:text-primary-400">Add to my Calendar</a>
-      </p>
-    {{ end }}
+    {{ partial "add-to-calendar.html" (dict "page" . "class" "mt-1 text-base") }}
   </div>
 {{ else }}
   <p class="text-neutral-500 dark:text-neutral-300">

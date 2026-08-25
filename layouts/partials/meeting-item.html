@@ -1,13 +1,33 @@
-{{/* A single meeting card. Context is the meeting page. */}}
-<a href="{{ .RelPermalink }}" class="block rounded-xl border border-neutral-300 dark:border-neutral-700 p-5 transition hover:border-primary-500/60 hover:shadow-sm">
+{{/* A single meeting card.
+
+     Call with: (dict "page" <meeting page> "showCalendar" <bool>)
+
+     showCalendar is false for past meetings — offering to add a meeting that
+     already happened to your calendar is just noise.
+
+     The card is a <div> rather than a wrapping <a> so the calendar link can live
+     inside it — nested anchors are invalid HTML and browsers recover from them
+     unpredictably. The title link is stretched across the whole card via
+     .meeting-card-link (see custom.css) so the card still behaves like one big
+     link, and the calendar link is lifted above that overlay.
+*/}}
+{{- $showCalendar := .showCalendar -}}
+{{- with .page -}}
+<div class="meeting-card rounded-xl border border-neutral-300 dark:border-neutral-700 p-5 transition hover:border-primary-500/60 hover:shadow-sm">
   <p class="text-sm font-semibold text-primary-600 dark:text-primary-400">
     {{ .Date.Format "Mon · Jan 2, 2006 · 3:04 PM" }}{{ with .Params.endDate }}–{{ (time .).Format "3:04 PM" }}{{ end }}
   </p>
-  <h3 class="mt-1 text-lg font-bold">{{ .Title | emojify }}</h3>
+  <h3 class="mt-1 text-lg font-bold">
+    <a href="{{ .RelPermalink }}" class="meeting-card-link">{{ .Title | emojify }}</a>
+  </h3>
   {{ with .Params.location }}
     <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-300">📍 {{ . }}</p>
   {{ end }}
   {{ with .Summary }}
     <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-300 line-clamp-2">{{ . | plainify }}</p>
   {{ end }}
-</a>
+  {{ if $showCalendar }}
+    {{ partial "add-to-calendar.html" (dict "page" . "class" "mt-3 text-sm") }}
+  {{ end }}
+</div>
+{{- end -}}

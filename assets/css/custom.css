@@ -71,3 +71,33 @@ html:not(.dark) #menu-blur {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Meeting cards. The card is a <div> so the "Add to my Calendar" link can sit
+   inside it without nesting anchors, but we still want the whole card to be
+   clickable — so the title link is stretched over the card with a transparent
+   ::after overlay, and the calendar link is lifted above that overlay so it
+   stays independently clickable. Written as real CSS rather than Tailwind
+   utilities for the reason noted above: the theme's precompiled build only
+   includes a subset, so inset-0 / z-10 / after:* can't be counted on. */
+.meeting-card {
+  position: relative;
+}
+.meeting-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* The .ics download link. */
+.meeting-cal-link {
+  position: relative;
+  z-index: 1;
+  color: rgb(var(--color-primary-600));
+  white-space: nowrap;
+}
+.meeting-cal-link:hover {
+  text-decoration: underline;
+}
+.dark .meeting-cal-link {
+  color: rgb(var(--color-primary-400));
+}
