@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  # Daily rebuild so a finished meeting rolls into "Past meetings" and the next
+  # one is promoted on its own. The layouts decide that from build time, so
+  # without this the site stays frozen until the next push.
+  # 09:00 UTC = 5:00 AM ET during EDT, 4:00 AM during EST.
+  schedule:
+    - cron: "0 9 * * *"
   workflow_dispatch:
 
 permissions:

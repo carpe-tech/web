@@ -1,7 +1,7 @@
 {{/* Renders the next upcoming meeting (or the most recent past one as a fallback). */}}
-{{ $meetings := where site.RegularPages "Section" "meetings" }}
-{{ $upcoming := sort (where $meetings "Date" ">=" now) "Date" "asc" }}
-{{ $past := sort (where $meetings "Date" "<" now) "Date" "desc" }}
+{{ $split := partial "meeting-split.html" . }}
+{{ $upcoming := $split.upcoming }}
+{{ $past := $split.past }}
 {{ $next := "" }}
 {{ $isUpcoming := false }}
 {{ if gt (len $upcoming) 0 }}

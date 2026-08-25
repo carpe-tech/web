@@ -1,0 +1,22 @@
+{{/* Splits meetings into upcoming/past and returns them as a dict.
+
+     A meeting counts as upcoming until its endDate has passed (falling back to
+     its start time when endDate is missing), so it stays on the homepage for
+     the whole evening it's happening rather than disappearing at 6:30 PM.
+
+     Compared as Unix seconds so the check doesn't depend on how the frontmatter
+     endDate was parsed. Returns: dict "upcoming" (soonest first) "past" (newest first).
+*/ -}}
+{{- $nowUnix := now.Unix -}}
+{{- $upcoming := slice -}}
+{{- $past := slice -}}
+{{- range where site.RegularPages "Section" "meetings" -}}
+  {{- $end := .Date -}}
+  {{- with .Params.endDate }}{{ $end = time . }}{{ end -}}
+  {{- if ge $end.Unix $nowUnix -}}
+    {{- $upcoming = $upcoming | append . -}}
+  {{- else -}}
+    {{- $past = $past | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "upcoming" (sort $upcoming "Date" "asc") "past" (sort $past "Date" "desc") -}}
