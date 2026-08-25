@@ -6,7 +6,11 @@
 
      Compared as Unix seconds so the check doesn't depend on how the frontmatter
      endDate was parsed. Returns: dict "upcoming" (soonest first) "past" (newest first).
+
+     Past is capped at the 4 most recent so the Meetings page doesn't grow without
+     bound at two meetings a month. Upcoming is uncapped — we never have many.
 */ -}}
+{{- $pastLimit := 4 -}}
 {{- $nowUnix := now.Unix -}}
 {{- $upcoming := slice -}}
 {{- $past := slice -}}
@@ -19,4 +23,4 @@
     {{- $past = $past | append . -}}
   {{- end -}}
 {{- end -}}
-{{- return dict "upcoming" (sort $upcoming "Date" "asc") "past" (sort $past "Date" "desc") -}}
+{{- return dict "upcoming" (sort $upcoming "Date" "asc") "past" (first $pastLimit (sort $past "Date" "desc")) -}}
