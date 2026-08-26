@@ -51,11 +51,17 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/New_York
+        # No --baseURL override: we serve from the carpe-tech.org custom domain
+        # (see static/CNAME), so the baseURL in config/_default/hugo.toml is
+        # authoritative. The starter workflow's
+        # --baseURL "${{ steps.pages.outputs.base_url }}/" is meant for project
+        # sites at user.github.io/repo, and it reported http:// for our domain —
+        # which put http:// canonical tags, sitemap entries, RSS links and ICS
+        # URLs on a site that is served over https.
         run: |
           hugo \
             --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
