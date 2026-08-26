@@ -88,6 +88,35 @@ html:not(.dark) #menu-blur {
   inset: 0;
 }
 
+/* "See all N upcoming meetings" disclosure below the first four cards.
+   Styled to read as a link; the marker flips when open. */
+.meeting-more > summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgb(var(--color-primary-600));
+}
+.meeting-more > summary::-webkit-details-marker {
+  display: none;
+}
+.meeting-more > summary::before {
+  content: "▸";
+  font-size: 0.8em;
+}
+.meeting-more[open] > summary::before {
+  content: "▾";
+}
+.meeting-more > summary:hover {
+  text-decoration: underline;
+}
+.dark .meeting-more > summary {
+  color: rgb(var(--color-primary-400));
+}
+
 /* The .ics download link. */
 .meeting-cal-link {
   position: relative;

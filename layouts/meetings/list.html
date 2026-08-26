@@ -19,9 +19,23 @@
     <section class="mt-10">
       <h2 class="text-2xl font-bold border-b border-neutral-300 dark:border-neutral-700 pb-2">Upcoming</h2>
       {{ if gt (len $upcoming) 0 }}
+        {{/* Show the next few inline; the rest fold into a native <details> so the
+             page stays short without hiding anything from search engines or from
+             visitors with JS off. */}}
+        {{ $shown := first 4 $upcoming }}
+        {{ $rest := slice }}
+        {{ if gt (len $upcoming) 4 }}{{ $rest = after 4 $upcoming }}{{ end }}
         <div class="mt-5 grid gap-4 sm:grid-cols-2">
-          {{ range $upcoming }}{{ partial "meeting-item.html" (dict "page" . "showCalendar" true) }}{{ end }}
+          {{ range $shown }}{{ partial "meeting-item.html" (dict "page" . "showCalendar" true) }}{{ end }}
         </div>
+        {{ with $rest }}
+          <details class="meeting-more mt-5">
+            <summary>See all {{ len $upcoming }} upcoming meetings</summary>
+            <div class="mt-5 grid gap-4 sm:grid-cols-2">
+              {{ range . }}{{ partial "meeting-item.html" (dict "page" . "showCalendar" true) }}{{ end }}
+            </div>
+          </details>
+        {{ end }}
       {{ else }}
         <p class="mt-4 text-neutral-500 dark:text-neutral-300">
           Nothing posted yet — check <a class="underline hover:text-primary-500" href="{{ site.Params.links.meetup }}">Meetup</a> for the latest.
