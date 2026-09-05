@@ -1,10 +1,12 @@
 ---
 title: "September Meeting — Open forum & show your project"
-date: 2026-09-09T18:30:00-04:00
-endDate: 2026-09-09T20:30:00-04:00
+date: 2026-09-08T18:30:00-04:00
+endDate: 2026-09-08T20:30:00-04:00
 location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"
 mapUrl: "https://www.google.com/maps/search/?api=1&query=Worthington+Park+Library%2C+1389+Worthington+Centre+Dr%2C+Worthington%2C+OH"
 meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/315418006"
+aliases:
+  - "/meetings/2026-09-09-open-forum/"
 draft: false
 outputs:
   - HTML
