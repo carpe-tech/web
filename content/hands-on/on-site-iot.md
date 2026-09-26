@@ -27,5 +27,5 @@ It's optional. You only need it when your project needs a backend.
   what to have on your laptop
 - [Walkthrough: device to backend](https://deevnet.github.io/deevnet-docs/docs/runbook/tenant/walkthrough-mqtt-device/) —
   a Pico W or ESP32 talking to a backend, end to end
-- [Take It Home on a Pi](https://deevnet.github.io/deevnet-docs/docs/runbook/tenant/take-it-home/) —
+- [Take It Home on a Pi](https://deevnet.github.io/deevnet-docs/docs/runbook/tenant/tenant-to-pi-image/) —
   bring a microSD card and your backend goes home with you
