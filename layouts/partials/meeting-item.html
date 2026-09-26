@@ -9,7 +9,7 @@
      inside it — nested anchors are invalid HTML and browsers recover from them
      unpredictably. The title link is stretched across the whole card via
      .meeting-card-link (see custom.css) so the card still behaves like one big
-     link, and the calendar link is lifted above that overlay.
+     link, and the calendar and hands-on links are lifted above that overlay.
 */}}
 {{- $showCalendar := .showCalendar -}}
 {{- with .page -}}
@@ -28,6 +28,7 @@
   {{ end }}
   {{ if $showCalendar }}
     {{ partial "add-to-calendar.html" (dict "page" . "class" "mt-3 text-sm") }}
+    {{ partial "hands-on-note.html" (dict "page" . "class" "mt-1 text-sm text-neutral-500 dark:text-neutral-300") }}
   {{ end }}
 </div>
 {{- end -}}
