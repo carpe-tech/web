@@ -14,8 +14,9 @@ Nothing. There's no membership, no dues, and no registration. Just show up.
 
 ## What should I bring?
 
-Just yourself. If you have a project you're working on, bring it — finished or not. A
-laptop can be handy if you want to tinker, but it's optional.
+Just yourself. If you have a project you're working on, bring it — finished or not. If you
+want to get hands-on, the one thing you need is a **laptop**, to write code and flash your
+devices. Bring your own devices or borrow ours — see [Hands-On](/hands-on/).
 
 ## Do I need to RSVP?
 
