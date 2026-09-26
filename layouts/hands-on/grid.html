@@ -1,0 +1,26 @@
+{{/* Hands-On overview: intro, then the child pages as a 2x2 grid of icon tiles.
+     Selected with `layout: grid` in content/hands-on/_index.md; tiles order by weight
+     and take their icon from each page's `icon` front matter. */}}
+{{ define "main" }}
+  <header>
+    {{ if site.Params.list.showBreadcrumbs | default false }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  </header>
+
+  <section class="mt-6 prose max-w-prose dark:prose-invert">
+    {{ .Content }}
+  </section>
+
+  <section class="hands-on-grid mt-10">
+    {{ range .Pages.ByWeight }}
+      <a href="{{ .RelPermalink }}"
+         class="hands-on-tile flex flex-col gap-3 rounded-xl border border-neutral-300 p-6 dark:border-neutral-700">
+        <span class="hands-on-tile-icon">{{ partial "hands-on-icon.html" .Params.icon }}</span>
+        <span class="text-xl font-bold text-neutral-900 dark:text-neutral">{{ .Title }}</span>
+        <span class="text-neutral-500 dark:text-neutral-400">{{ .Description }}</span>
+      </a>
+    {{ end }}
+  </section>
+{{ end }}

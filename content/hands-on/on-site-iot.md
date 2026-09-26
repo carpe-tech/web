@@ -1,7 +1,8 @@
 ---
 title: "On-Site IoT as a Service"
 description: "A network and back-end services for your devices, right in the room: MQTT messaging, logs and dashboards, with no cloud account."
-weight: 40
+weight: 30
+icon: "broadcast"
 ---
 
 Some projects outgrow a USB cable: several devices that need to talk to each other, and

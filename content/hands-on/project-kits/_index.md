@@ -1,7 +1,8 @@
 ---
-title: "Project Kits"
+title: "Example Project Kits"
 description: "Complete projects that come pre-wired and already running. Borrow one for the evening, then make it yours."
-weight: 30
+weight: 20
+icon: "chip"
 orderByWeight: true
 ---
 

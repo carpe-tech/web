@@ -1,7 +1,8 @@
 ---
 title: "Bring Your Own Devices"
-description: "Your breadboard, microcontrollers and sensors — plus an optional backend with MQTT, logs and dashboards in the room."
-weight: 10
+description: "Your breadboard, microcontrollers and sensors — a finished project or a bag of parts, it all fits."
+weight: 40
+icon: "plug"
 ---
 
 Bring your breadboard, microcontrollers and sensors — a Pico W, an ESP32, an Arduino, whatever
