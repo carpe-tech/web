@@ -1,10 +1,11 @@
 ---
 title: "Links"
-description: "Other local maker and tech communities around Columbus, plus projects from CARPE members."
+description: "Other local maker and tech communities and regional events around Columbus."
 ---
 
 CARPE is one small part of a great maker and tech scene in central Ohio. Here are some
-other communities worth checking out, plus projects our members are building.
+other communities and events worth checking out. For what our own members are building, see
+[Member Projects](/member-projects/).
 
 ## Other Local Communities
 
@@ -35,14 +36,3 @@ Worth a road trip — conventions and festivals around the Midwest:
 - **[CORGSCon](https://www.corgscon.com/)** — Columbus's long-running retro gaming
   convention at the Ohio Expo Center: a vendor hall, special guests, and plenty of classic
   video games.
-
-## Member Projects & Portfolios
-
-Building something cool? We'd love to feature it here — mention it in
-[Discord](https://discord.gg/JjqR5dPYem) or grab an organizer at a meeting.
-
-- **[Electronics Projects](https://cdeever.github.io/projects/electronics/)** — A portfolio of
-  electronics and maker builds.
-- **[NetraPi](https://netrapi.vercel.app/)** — A smart dashcam built with a Raspberry Pi and a
-  Coral USB TPU that spots unsafe stop-sign behavior in real time, then records, uploads, and
-  shows each event on its public site.

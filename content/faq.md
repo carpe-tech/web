@@ -42,6 +42,6 @@ Please do! Talks and demos can be short and informal — just mention it in
 
 ## I have my own projects site / want to share my builds. Can CARPE feature them?
 
-Absolutely. We list members' project links on our [Links](/links/) page. Just ask in
+Absolutely. We list members' project links on our [Member Projects](/member-projects/) page. Just ask in
 [Discord](https://discord.gg/JjqR5dPYem) or share it at one of the meetings, and we'll add
 it.
