@@ -2,6 +2,8 @@
 title: "Environment Station"
 description: "Temperature, humidity, pressure and light readings, charted on a dashboard."
 weight: 20
+icon: "thermometer"
+teaches: "Sense and publish"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the

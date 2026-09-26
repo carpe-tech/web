@@ -2,6 +2,8 @@
 title: "Button and Buzzer Pair"
 description: "Press a button on one table, and a buzzer and light go off on another."
 weight: 30
+icon: "bell"
+teaches: "Two devices talking through a broker"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the

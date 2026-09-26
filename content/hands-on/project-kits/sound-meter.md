@@ -2,6 +2,8 @@
 title: "Sound Meter"
 description: "An I2S microphone measures sound levels and charts them."
 weight: 40
+icon: "mic"
+teaches: "Streaming audio data"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the

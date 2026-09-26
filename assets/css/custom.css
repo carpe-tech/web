@@ -170,3 +170,9 @@ html:not(.dark) #menu-blur {
 .community-btn-meetup { background-color: #ED1C40; }
 .community-btn-github { background-color: rgb(var(--color-neutral-800)); }
 .dark .community-btn-github { background-color: rgb(var(--color-neutral-700)); }
+.hands-on-tile-teaches {
+  color: rgb(var(--color-primary-600));
+}
+.dark .hands-on-tile-teaches {
+  color: rgb(var(--color-primary-400));
+}

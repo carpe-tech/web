@@ -1,7 +1,8 @@
 {{/* Hands-On overview: intro, then the child pages as a 2x2 grid of icon tiles.
      Selected with `layout: grid` in content/hands-on/_index.md; tiles order by weight
      and take their icon from each page's `icon` front matter; `tile: false` keeps a page
-     out of the grid. */}}
+     out of the grid, and an optional `teaches` adds a line under the summary.
+     Used by /hands-on/ and /hands-on/project-kits/. */}}
 {{ define "main" }}
   <header>
     {{ if site.Params.list.showBreadcrumbs | default false }}
@@ -21,6 +22,7 @@
         <span class="hands-on-tile-icon">{{ partial "hands-on-icon.html" .Params.icon }}</span>
         <span class="text-xl font-bold text-neutral-900 dark:text-neutral">{{ .Title }}</span>
         <span class="text-neutral-500 dark:text-neutral-400">{{ .Description }}</span>
+        {{ with .Params.teaches }}<span class="hands-on-tile-teaches text-sm">Teaches: {{ . }}</span>{{ end }}
       </a>
     {{ end }}
   </section>

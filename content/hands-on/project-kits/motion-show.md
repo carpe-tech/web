@@ -2,6 +2,8 @@
 title: "Motion Show"
 description: "A motion sensor triggers an RGB LED strip and sound through an I2S amp."
 weight: 10
+icon: "motion"
+teaches: "Sense, then react with light and sound"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the
