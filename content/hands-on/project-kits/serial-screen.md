@@ -2,6 +2,8 @@
 title: "Serial Screen"
 description: "A character display driven over a serial connection."
 weight: 80
+icon: "terminal"
+teaches: "The simplest display there is"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the

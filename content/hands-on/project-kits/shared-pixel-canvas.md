@@ -2,6 +2,8 @@
 title: "Shared Pixel Canvas"
 description: "An LED matrix that anyone in the room can send pixels to."
 weight: 50
+icon: "grid"
+teaches: "Many publishers, one display"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the

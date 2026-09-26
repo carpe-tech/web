@@ -164,9 +164,15 @@ html:not(.dark) #menu-blur {
   color: rgb(var(--color-primary-400));
 }
 
-/* Community link buttons: brand backgrounds (arbitrary Tailwind colours
+/* Community link buttons: brand backgrounds (arbitrary Tailwind colors
    aren't in the theme's compiled CSS). */
 .community-btn-discord { background-color: #5865F2; }
 .community-btn-meetup { background-color: #ED1C40; }
 .community-btn-github { background-color: rgb(var(--color-neutral-800)); }
 .dark .community-btn-github { background-color: rgb(var(--color-neutral-700)); }
+.hands-on-tile-teaches {
+  color: rgb(var(--color-primary-600));
+}
+.dark .hands-on-tile-teaches {
+  color: rgb(var(--color-primary-400));
+}

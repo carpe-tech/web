@@ -2,6 +2,8 @@
 title: "Camera with Object Detection"
 description: "An ESP32 camera takes snapshots and detects what's in them."
 weight: 60
+icon: "camera"
+teaches: "Images, and where the heavy lifting runs"
 ---
 
 **Status: in the works.** Wiring and reference firmware will be published in the
