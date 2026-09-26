@@ -164,7 +164,7 @@ html:not(.dark) #menu-blur {
   color: rgb(var(--color-primary-400));
 }
 
-/* Community link buttons: brand backgrounds (arbitrary Tailwind colours
+/* Community link buttons: brand backgrounds (arbitrary Tailwind colors
    aren't in the theme's compiled CSS). */
 .community-btn-discord { background-color: #5865F2; }
 .community-btn-meetup { background-color: #ED1C40; }

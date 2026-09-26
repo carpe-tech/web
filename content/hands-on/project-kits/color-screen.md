@@ -1,6 +1,7 @@
 ---
-title: "Colour Screen"
-description: "A small colour TFT display showing messages and status sent to it."
+title: "Color Screen"
+description: "A small color TFT display showing messages and status sent to it."
+aliases: ["/hands-on/project-kits/colour-screen/"]
 weight: 70
 ---
 
@@ -9,7 +10,7 @@ weight: 70
 
 ## What it does
 
-A small colour display that shows messages and status sent to it.
+A small color display that shows messages and status sent to it.
 
 ## What it teaches
 
@@ -17,4 +18,4 @@ Driving a graphical display: layout, fonts and redrawing only what changed.
 
 ## Parts (planned)
 
-- SPI colour TFT display (for example ILI9341 or ST7789)
+- SPI color TFT display (for example ILI9341 or ST7789)

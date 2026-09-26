@@ -21,7 +21,7 @@ yours. Each kit teaches one pattern you can reuse in your own builds.
 | [Sound Meter](sound-meter/) | Streaming audio data |
 | [Shared Pixel Canvas](shared-pixel-canvas/) | Many publishers, one display |
 | [Camera with Object Detection](camera-object-detection/) | Images, and where the heavy lifting runs |
-| [Colour Screen](colour-screen/) | Driving a graphical display |
+| [Color Screen](color-screen/) | Driving a graphical display |
 | [Serial Screen](serial-screen/) | The simplest display there is |
 
 ## Borrowing a kit onto On-Site IoT as a Service
