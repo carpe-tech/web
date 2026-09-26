@@ -1,0 +1,11 @@
+{{/* One-line hands-on pointer under a meeting notice. Upcoming meetings only.
+
+     Call with: (dict "page" <meeting page> "class" "<classes for the wrapper>")
+*/ -}}
+{{- $page := .page -}}
+{{- if $page.Date.After now -}}
+  <p class="{{ .class }}">
+    🛠️ Hands-on: bring your own devices or borrow ours — just bring a laptop.
+    <a href="/hands-on/" class="text-primary-600 hover:underline dark:text-primary-400">How it works</a>
+  </p>
+{{- end -}}
