@@ -16,7 +16,9 @@ work the same for a Pico W.
 
 Python on the board, and one small app on your laptop.
 
-1. Install [Thonny](https://thonny.org/)
+**Download:** [thonny.org](https://thonny.org/)
+
+1. Install Thonny
 2. Hold the Pico's **BOOTSEL** button while you plug it in with the USB cable
 3. In Thonny's interpreter settings, choose **MicroPython (Raspberry Pi Pico)** and use
    **Install or update MicroPython** to put MicroPython on the board
@@ -28,7 +30,9 @@ You only do steps 2 and 3 once per board.
 
 Drag-and-drop blocks, good for a first project or younger builders.
 
-1. Open [Piper Make](https://make.playpiper.com/) in **Chrome** or **Edge** (it needs Web Serial,
+**Open:** [make.playpiper.com](https://make.playpiper.com/)
+
+1. Open Piper Make in **Chrome** or **Edge** (it needs Web Serial,
    which other browsers lack)
 2. Follow its setup the first time you connect a Pico
 
@@ -36,10 +40,13 @@ Drag-and-drop blocks, good for a first project or younger builders.
 
 If you already know Arduino, or want to write C/C++.
 
-1. Install the [Arduino IDE](https://www.arduino.cc/en/software)
-2. In **Preferences**, add this to **Additional boards manager URLs**:
+**Download:** [arduino.cc/en/software](https://www.arduino.cc/en/software/). We prefer the
+**Legacy IDE (1.8.x)**, further down that page; these steps are written for it.
+
+1. Install the Arduino Legacy IDE
+2. In **File → Preferences**, add this to **Additional Boards Manager URLs**:
    `https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json`
-3. In the **Boards Manager**, install **Raspberry Pi Pico/RP2040**, then select
+3. In **Tools → Board → Boards Manager**, install **Raspberry Pi Pico/RP2040**, then select
    **Raspberry Pi Pico** as the board
 4. For the first upload, hold **BOOTSEL** while plugging the Pico in
 
