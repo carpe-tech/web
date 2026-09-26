@@ -41,5 +41,8 @@ Worth a road trip — conventions and festivals around the Midwest:
 Building something cool? We'd love to feature it here — mention it in
 [Discord](https://discord.gg/JjqR5dPYem) or grab an organizer at a meeting.
 
-- **[Chris Deever — Projects](https://cdeever.github.io/projects/)** — A portfolio of
-  electronics, maker builds, software, and home projects.
+- **[Electronics Projects](https://cdeever.github.io/projects/electronics/)** — A portfolio of
+  electronics and maker builds.
+- **[NetraPi](https://netrapi.vercel.app/)** — A smart dashcam built with a Raspberry Pi and a
+  Coral USB TPU that spots unsafe stop-sign behavior in real time, then records, uploads, and
+  shows each event on its public site.
