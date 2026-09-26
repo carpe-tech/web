@@ -23,10 +23,9 @@ yours. Each kit teaches one pattern you can reuse in your own builds.
 | [Colour Screen](colour-screen/) | Driving a graphical display |
 | [Serial Screen](serial-screen/) | The simplest display there is |
 
-## Borrowing a kit onto the Mobile Factory
+## Borrowing a kit onto On-Site IoT as a Service
 
-A project kit can join the [Mobile Factory](/hands-on/bring-your-own/#an-optional-backend-the-mobile-factory)
-as a device in **your own** tenant, with your own Wi-Fi key and broker account. You hand it back
+A project kit can join [On-Site IoT as a Service](/hands-on/on-site-iot/) as a device in **your own** tenant, with your own Wi-Fi key and broker account. You hand it back
 at the end of the night with nothing of yours left on it. The platform side of borrowing and
 returning a kit is in the Deevnet docs:
 [Project Kits](https://deevnet.github.io/deevnet-docs/docs/runbook/tenant/project-kits/).

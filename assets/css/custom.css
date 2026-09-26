@@ -117,7 +117,7 @@ html:not(.dark) #menu-blur {
   color: rgb(var(--color-primary-400));
 }
 
-/* The .ics download link. */
+/* The .ics download link (also the hands-on link under a meeting). */
 .meeting-cal-link {
   position: relative;
   z-index: 1;
