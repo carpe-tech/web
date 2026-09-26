@@ -13,7 +13,8 @@ at meetings so you can try things out:
 - Play with a few simple sensors
 
 No pressure, no experience required — just an interest in learning and building. Bring a
-laptop and we'll help you get set up.
+laptop and we'll help you get set up, or [get your laptop ready](/hands-on/laptop-setup/)
+before you come.
 
 ## The kit
 
