@@ -1,7 +1,8 @@
 ---
 title: "Starter Kits"
 description: "New to electronics? Borrow a starter kit and blink your first LED, drive a display or play with simple sensors."
-weight: 20
+weight: 10
+icon: "led"
 ---
 
 New to electronics, or just curious about tinkering? A couple of **starter kits** are on hand

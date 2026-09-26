@@ -1,7 +1,7 @@
 ---
 title: "Hands-On Opportunities"
 description: "Build something at a CARPE meeting — bring your own devices or borrow ours. The only hard requirement is a laptop."
-orderByWeight: true
+layout: grid
 ---
 
 Every CARPE meeting has room to get hands-on. **Bring your own devices, or borrow ours at the

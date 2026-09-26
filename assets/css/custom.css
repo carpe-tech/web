@@ -130,3 +130,28 @@ html:not(.dark) #menu-blur {
 .dark .meeting-cal-link {
   color: rgb(var(--color-primary-400));
 }
+
+/* Hands-On overview tiles. */
+.hands-on-tile {
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.hands-on-tile:hover {
+  border-color: rgb(var(--color-primary-500));
+  transform: translateY(-2px);
+}
+.hands-on-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .hands-on-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.hands-on-tile-icon {
+  color: rgb(var(--color-primary-600));
+}
+.dark .hands-on-tile-icon {
+  color: rgb(var(--color-primary-400));
+}
