@@ -18,8 +18,9 @@ before you come.
 
 ## The kit
 
-Our starter kits are a Raspberry Pi Pico basic starter kit
-([on Amazon](https://www.amazon.com/dp/B0C3771CK8)). It supports MicroPython, C/C++ and Piper
+Our starter kits are the
+[LAFVIN Basic Starter Kit for Raspberry Pi Pico](https://www.amazon.com/dp/B0C3771CK8) (on Amazon).
+It supports MicroPython, C/C++ and Piper
 Make, and comes with tutorials and sample code.
 
 {{< alert "circle-info" >}}

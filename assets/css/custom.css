@@ -155,3 +155,11 @@ html:not(.dark) #menu-blur {
 .dark .hands-on-tile-icon {
   color: rgb(var(--color-primary-400));
 }
+
+/* Site rule: links in page content are green, so they stand out. */
+.prose a {
+  color: rgb(var(--color-primary-600));
+}
+.dark .prose a {
+  color: rgb(var(--color-primary-400));
+}
