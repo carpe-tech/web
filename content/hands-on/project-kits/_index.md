@@ -15,5 +15,5 @@ yours. Each kit teaches one pattern you can reuse in your own builds.
 
 A kit can also join [On-Site IoT as a Service](/hands-on/on-site-iot/) as a device in **your
 own** tenant, with your own Wi-Fi key and broker account, and goes back at the end of the night
-with nothing of yours left on it. The platform side is in the Deevnet docs:
-[Project Kits](https://deevnet.github.io/deevnet-docs/docs/runbook/tenant/project-kits/).
+with nothing of yours left on it. How to get a kit onto the network is in the Deevnet docs:
+[Connect a Device to the IoT SSID](https://deevnet.github.io/deevnet-docs/docs/runbook/tenant/connect-a-device/).
