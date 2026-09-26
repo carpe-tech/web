@@ -155,3 +155,18 @@ html:not(.dark) #menu-blur {
 .dark .hands-on-tile-icon {
   color: rgb(var(--color-primary-400));
 }
+
+/* Site rule: links in page content are green, so they stand out. */
+.prose a {
+  color: rgb(var(--color-primary-600));
+}
+.dark .prose a {
+  color: rgb(var(--color-primary-400));
+}
+
+/* Community link buttons: brand backgrounds (arbitrary Tailwind colours
+   aren't in the theme's compiled CSS). */
+.community-btn-discord { background-color: #5865F2; }
+.community-btn-meetup { background-color: #ED1C40; }
+.community-btn-github { background-color: rgb(var(--color-neutral-800)); }
+.dark .community-btn-github { background-color: rgb(var(--color-neutral-700)); }
