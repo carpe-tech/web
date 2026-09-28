@@ -1,6 +1,6 @@
 ---
 title: "Example Project Kits"
-description: "Complete projects that come pre-wired and already running. Borrow one for the evening, then make it yours."
+description: "Complete projects that come pre-wired and already running. Borrow one and hack on it for the evening."
 weight: 20
 icon: "chip"
 badge: "Coming soon"
@@ -8,8 +8,9 @@ layout: grid
 ---
 
 A **project kit** is a complete project that comes pre-wired and already running reference
-firmware. You borrow it for the evening, see it work in minutes, then change it and make it
-yours. Each kit teaches one pattern you can reuse in your own builds.
+firmware. You borrow it for the evening, see it work in minutes, then hack on it: change the
+code, swap a part, see what happens. The kit goes back at the end of the night, but each one
+teaches a pattern you can reuse in your own builds.
 
 **These are in the works.** Wiring, parts lists and reference firmware will be published in the
 [carpe-tech GitHub organization](https://github.com/carpe-tech) as each kit is built.
