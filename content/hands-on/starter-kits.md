@@ -61,4 +61,4 @@ In case the link breaks, here's the contents:
 | RGB LED | 1 |
 | Micro USB cable | 1 |
 
-When you're ready for something bigger, try a [project kit](/hands-on/project-kits/).
+When you're ready for something bigger, try a [reference project](/hands-on/reference-projects/).

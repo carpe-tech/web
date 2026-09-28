@@ -1,6 +1,7 @@
 ---
 title: "Serial Screen"
 description: "A character display driven over a serial connection."
+aliases: ["/hands-on/project-kits/serial-screen/"]
 weight: 80
 icon: "terminal"
 teaches: "The simplest display there is"

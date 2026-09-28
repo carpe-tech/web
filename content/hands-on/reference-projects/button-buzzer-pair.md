@@ -1,6 +1,7 @@
 ---
 title: "Button and Buzzer Pair"
 description: "Press a button on one table, and a buzzer and light go off on another."
+aliases: ["/hands-on/project-kits/button-buzzer-pair/"]
 weight: 30
 icon: "bell"
 teaches: "Two devices talking through a broker"

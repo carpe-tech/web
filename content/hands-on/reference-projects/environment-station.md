@@ -1,6 +1,7 @@
 ---
 title: "Environment Station"
 description: "Temperature, humidity, pressure and light readings, charted on a dashboard."
+aliases: ["/hands-on/project-kits/environment-station/"]
 weight: 20
 icon: "thermometer"
 teaches: "Sense and publish"
