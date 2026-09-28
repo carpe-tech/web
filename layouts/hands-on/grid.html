@@ -1,14 +1,18 @@
 {{/* Hands-On overview: intro, then the child pages as a 2x2 grid of icon tiles.
      Selected with `layout: grid` in content/hands-on/_index.md; tiles order by weight
      and take their icon from each page's `icon` front matter; `tile: false` keeps a page
-     out of the grid, and an optional `teaches` adds a line under the summary.
+     out of the grid, an optional `teaches` adds a line under the summary, and an optional
+     `badge` (e.g. "Coming soon") tags both the tile and the page's own title.
      Used by /hands-on/ and /hands-on/project-kits/. */}}
 {{ define "main" }}
   <header>
     {{ if site.Params.list.showBreadcrumbs | default false }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <div class="hands-on-title-row mt-5 flex flex-wrap items-center">
+      <h1 class="text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+      {{ with .Params.badge }}<span class="hands-on-badge">{{ . }}</span>{{ end }}
+    </div>
   </header>
 
   <section class="mt-6 prose max-w-prose dark:prose-invert">
@@ -20,7 +24,10 @@
       <a href="{{ .RelPermalink }}"
          class="hands-on-tile flex flex-col gap-3 rounded-xl border border-neutral-300 p-6 dark:border-neutral-700">
         <span class="hands-on-tile-icon">{{ partial "hands-on-icon.html" .Params.icon }}</span>
-        <span class="text-xl font-bold text-neutral-900 dark:text-neutral">{{ .Title }}</span>
+        <span class="hands-on-title-row flex flex-wrap items-center">
+          <span class="text-xl font-bold text-neutral-900 dark:text-neutral">{{ .Title }}</span>
+          {{ with .Params.badge }}<span class="hands-on-badge">{{ . }}</span>{{ end }}
+        </span>
         <span class="text-neutral-500 dark:text-neutral-400">{{ .Description }}</span>
         {{ with .Params.teaches }}<span class="hands-on-tile-teaches text-sm">Teaches: {{ . }}</span>{{ end }}
       </a>
