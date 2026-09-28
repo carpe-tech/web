@@ -12,10 +12,10 @@ other communities and events worth checking out, plus where to pick up parts loc
 - **[CORE — Central Ohio Radio Enthusiasts](https://core.radio/)** — An informal,
   all-are-welcome group for ham radio, GMRS, software-defined radio, mesh networking
   (Meshtastic), and anyone curious about radio. Monthly meetups, no experience required.
-- **[Columbus Vintage Computing Club](https://cbusvintagecomputing.org/)** — "The home of
-  vintage computing in Columbus." Workshops, demos, presentations, and social gatherings
-  around retro and vintage computing, meeting roughly monthly in the Hilliard area. Free
-  and open to all.
+- **Columbus Vintage Computing Club** — *On hiatus for now; we hope they're back soon.*
+  Billed as "the home of vintage computing in Columbus," the club has hosted workshops,
+  demos, presentations, and social gatherings around retro and vintage computing, meeting
+  roughly monthly in the Hilliard area.
 - **[East Columbus Maker Meetup](https://eastcolumbusmakermeetup.org/)** — Local Makers
   gathering monthly to connect, create, and share projects, swap ideas, and pick up new
   skills. CNC, CAD, and 3D printing are frequent topics.
