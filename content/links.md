@@ -39,9 +39,10 @@ Worth a road trip — conventions and festivals around the Midwest:
 
 ## Shop Local
 
-Need parts for your next project? Columbus is Micro Center's hometown, and the local store
-carries a big selection of maker hardware. These links go straight to the Columbus store's
-inventory. (CARPE isn't affiliated with Micro Center; it's just handy to have nearby.)
+Need parts for your next project? Columbus has been Micro Center's hometown since 1979,
+and the local store carries a big selection of maker hardware. These links go straight to
+the Columbus store's inventory. (CARPE isn't affiliated with Micro Center; it's just handy
+to have nearby.)
 
 - **[Raspberry Pi & Pico](https://www.microcenter.com/search/search_results.aspx?fq=Brand%3ARaspberry+Pi&storeid=141)**
   — Boards, Pico microcontrollers, accessories, displays, cameras, and other Raspberry Pi
