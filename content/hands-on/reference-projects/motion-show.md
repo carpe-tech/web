@@ -1,6 +1,7 @@
 ---
 title: "Motion Show"
 description: "A motion sensor triggers an RGB LED strip and sound through an I2S amp."
+aliases: ["/hands-on/project-kits/motion-show/"]
 weight: 10
 icon: "motion"
 teaches: "Sense, then react with light and sound"

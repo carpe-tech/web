@@ -1,6 +1,7 @@
 ---
 title: "Shared Pixel Canvas"
 description: "An LED matrix that anyone in the room can send pixels to."
+aliases: ["/hands-on/project-kits/shared-pixel-canvas/"]
 weight: 50
 icon: "grid"
 teaches: "Many publishers, one display"

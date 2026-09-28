@@ -15,7 +15,7 @@ Factory** to meetings, a portable IoT platform that is its own mini-cloud. It gi
 - All declared from your own Terraform, with **no cloud account** and nothing leaving the room
 
 It works with [your own devices](/hands-on/bring-your-own/) and with a borrowed
-[project kit](/hands-on/project-kits/), which joins as a device in your own space and goes back
+[reference project](/hands-on/reference-projects/), which joins as a device in your own space and goes back
 at the end of the night with nothing of yours left on it.
 
 It's optional. You only need it when your project needs a backend.

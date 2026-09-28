@@ -1,7 +1,7 @@
 ---
 title: "Color Screen"
 description: "A small color TFT display showing messages and status sent to it."
-aliases: ["/hands-on/project-kits/colour-screen/"]
+aliases: ["/hands-on/project-kits/colour-screen/", "/hands-on/project-kits/color-screen/"]
 weight: 70
 icon: "monitor"
 teaches: "Driving a graphical display"

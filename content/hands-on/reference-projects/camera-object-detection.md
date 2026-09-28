@@ -1,6 +1,7 @@
 ---
 title: "Camera with Object Detection"
 description: "An ESP32 camera takes snapshots and detects what's in them."
+aliases: ["/hands-on/project-kits/camera-object-detection/"]
 weight: 60
 icon: "camera"
 teaches: "Images, and where the heavy lifting runs"

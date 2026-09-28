@@ -1,6 +1,7 @@
 ---
 title: "Sound Meter"
 description: "An I2S microphone measures sound levels and charts them."
+aliases: ["/hands-on/project-kits/sound-meter/"]
 weight: 40
 icon: "mic"
 teaches: "Streaming audio data"
