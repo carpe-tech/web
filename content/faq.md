@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: "Common questions about CARPE meetings."
+description: "Common questions about CARPE, the Columbus, Ohio Raspberry Pi, Arduino and ESP32 maker meetup: cost, experience, what to bring and where we meet."
 ---
 
 ## Do I need any experience?

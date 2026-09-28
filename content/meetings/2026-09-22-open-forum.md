@@ -1,8 +1,9 @@
 ---
 title: "September Meeting — Open forum & show your project"
+description: "CARPE Raspberry Pi, Arduino, ESP32 & microcontroller meetup — Tue, Sep 22, 2026, 6:30 PM at Northwest Library, Columbus, OH. Free, all skill levels welcome."
 date: 2026-09-22T18:30:00-04:00
 endDate: 2026-09-22T20:30:00-04:00
-location: "Northwest Library — Trillium Meeting Room"
+location: "Northwest Library — Trillium Meeting Room · 2280 Hard Rd, Columbus, OH"
 mapUrl: "https://maps.app.goo.gl/Z634mLiFrtNb5N8t5"
 meetupUrl: "https://www.meetup.com/columbus-arduino-raspberry-pi-enthusiasts/events/315888691"
 draft: false
