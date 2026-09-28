@@ -19,6 +19,9 @@ other communities and events worth checking out, plus where to pick up parts loc
 - **[East Columbus Maker Meetup](https://eastcolumbusmakermeetup.org/)** — Local Makers
   gathering monthly to connect, create, and share projects, swap ideas, and pick up new
   skills. CNC, CAD, and 3D printing are frequent topics.
+- **[Columbus Hardware Meetup](https://luma.com/cbus-hardware-meetup)** — A newer community
+  for people building physical products and hardware around Columbus: designers, founders,
+  engineers, investors, and anyone curious. Everyone is welcome; events are posted on Luma.
 - **[Midwest Hard Tech](https://midwesthardtech.substack.com/)** — A newsletter by Mike
   Liang building community for hardware, hard tech, and deep tech builders and entrepreneurs
   across the Midwest.
