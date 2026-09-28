@@ -1,5 +1,6 @@
 ---
 title: "November Meeting — Open forum & show your project"
+description: "CARPE Raspberry Pi, Arduino, ESP32 & microcontroller meetup — Tue, Nov 10, 2026, 6:30 PM at Worthington Park Library, Worthington, OH. Free, all skill levels welcome."
 date: 2026-11-10T18:30:00-05:00
 endDate: 2026-11-10T20:30:00-05:00
 location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"

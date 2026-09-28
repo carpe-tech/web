@@ -1,5 +1,6 @@
 ---
 title: "June Meeting — Open forum & show your project"
+description: "CARPE Raspberry Pi, Arduino, ESP32 & microcontroller meetup — Tue, Jun 30, 2026, 6:30 PM at Old Worthington Library, Worthington, OH. Free, all skill levels welcome."
 date: 2026-06-30T18:30:00-04:00
 endDate: 2026-06-30T20:30:00-04:00
 location: "Old Worthington Library — Wolf Study Room · 820 High St, Worthington, OH"

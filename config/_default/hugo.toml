@@ -1,6 +1,6 @@
 baseURL = 'https://carpe-tech.org/'
 languageCode = 'en-us'
-title = 'CARPE — Columbus Arduino & Raspberry Pi Enthusiasts'
+title = 'CARPE — Columbus, Ohio Raspberry Pi, Arduino & ESP32 Maker Group'
 theme = 'blowfish'
 
 enableRobotsTXT = true

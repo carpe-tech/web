@@ -1,5 +1,6 @@
 ---
 title: "August Meeting — Open forum & show your project"
+description: "CARPE Raspberry Pi, Arduino, ESP32 & microcontroller meetup — Tue, Aug 25, 2026, 6:30 PM at Karl Road Branch Library, Columbus, OH. Free, all skill levels welcome."
 date: 2026-08-25T18:30:00-04:00
 endDate: 2026-08-25T20:30:00-04:00
 location: "Karl Road Branch Library — Meeting Room 3 · 5590 Karl Rd, Columbus, OH"

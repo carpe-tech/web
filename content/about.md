@@ -1,6 +1,6 @@
 ---
 title: "About CARPE"
-description: "Who we are and what a CARPE meeting is like."
+description: "Who CARPE is: a free, beginner-friendly Columbus, Ohio group for Raspberry Pi, Arduino, ESP32 and microcontroller tinkerers, and what our twice-monthly meetings are like."
 ---
 
 **CARPE** — the **C**olumbus **A**rduino & **R**aspberry **P**i **E**nthusiasts — is an

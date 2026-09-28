@@ -8,6 +8,17 @@ logo = "img/logo.png"
 # The logo is already a "CARPE" wordmark, so don't repeat the long title as text.
 disableTextInHeader = true
 
+# Link-preview image for pages without their own featured image.
+defaultSocialImage = "img/logo.png"
+
+keywords = ["Raspberry Pi", "Arduino", "ESP32", "microcontrollers", "Raspberry Pi Pico", "electronics", "maker", "Columbus Ohio"]
+
+# Search engine verification. Search Console is best verified by DNS TXT record
+# (a Domain property), which needs nothing here; the HTML-tag method goes below.
+# [verification]
+#   google = ""
+#   bing = ""
+
 enableSearch = true
 enableCodeCopy = false
 

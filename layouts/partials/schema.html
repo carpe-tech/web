@@ -1,0 +1,119 @@
+{{/* CARPE override of the Blowfish schema partial. The home page describes the
+     group as an Organization (sameAs ties it to our Meetup, Discord and GitHub),
+     and meeting pages are Events rather than Articles, so they can show up in
+     Google's event results. Everything else is the theme's Article markup. */}}
+{{- $org := dict
+  "@type" "Organization"
+  "@id" (printf "%s#organization" site.Home.Permalink)
+  "name" "CARPE"
+  "alternateName" "Columbus Arduino & Raspberry Pi Enthusiasts"
+  "url" site.Home.Permalink
+  "description" site.Params.description
+  "areaServed" (dict "@type" "City" "name" "Columbus, Ohio")
+  "sameAs" (slice site.Params.links.meetup site.Params.links.discord site.Params.links.github)
+-}}
+{{- with resources.Get site.Params.logo }}
+  {{- $org = merge $org (dict "logo" (.RelPermalink | absURL)) }}
+{{- end }}
+{{ if .IsHome -}}
+  {{- $website := dict
+    "@type" "WebSite"
+    "@id" site.Home.Permalink
+    "name" site.Title
+    "description" site.Params.description
+    "inLanguage" site.LanguageCode
+    "url" site.Home.Permalink
+    "publisher" (dict "@id" (index $org "@id"))
+  -}}
+  {{- with site.Params.keywords }}{{ $website = merge $website (dict "keywords" .) }}{{ end }}
+  <script type="application/ld+json">
+  {{ dict "@context" "https://schema.org" "@graph" (slice $website $org) | jsonify | safeJS }}
+  </script>
+{{ else if and .IsPage (eq .Section "meetings") -}}
+  {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+  {{- $loc := .Params.location | default "Columbus, OH" -}}
+  {{- $parts := split $loc " · " -}}
+  {{- $placeName := index (split (index $parts 0) " — ") 0 -}}
+  {{- $address := cond (gt (len $parts) 1) (index $parts 1) "Columbus, OH" -}}
+  {{- $a := split $address ", " -}}
+  {{- if eq (len $a) 3 -}}
+    {{- $address = dict "@type" "PostalAddress" "streetAddress" (index $a 0) "addressLocality" (index $a 1) "addressRegion" (index $a 2) "addressCountry" "US" -}}
+  {{- else if eq (len $a) 2 -}}
+    {{- $address = dict "@type" "PostalAddress" "addressLocality" (index $a 0) "addressRegion" (index $a 1) "addressCountry" "US" -}}
+  {{- end -}}
+  {{- $offer := dict "@type" "Offer" "price" "0" "priceCurrency" "USD" "availability" "https://schema.org/InStock" "url" (.Params.meetupUrl | default .Permalink) -}}
+  {{- $event := dict
+    "@context" "https://schema.org"
+    "@type" "Event"
+    "name" .Title
+    "description" (.Description | default (.Summary | plainify | htmlUnescape))
+    "url" .Permalink
+    "startDate" (.Date.Format $iso8601)
+    "eventStatus" "https://schema.org/EventScheduled"
+    "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
+    "isAccessibleForFree" true
+    "location" (dict "@type" "Place" "name" $placeName "address" $address)
+    "offers" $offer
+    "organizer" $org
+  -}}
+  {{- with .Params.endDate }}{{ $event = merge $event (dict "endDate" ((time.AsTime .).Format $iso8601)) }}{{ end }}
+  {{- with index $org "logo" }}{{ $event = merge $event (dict "image" (slice .)) }}{{ end }}
+  <script type="application/ld+json">
+  {{ $event | jsonify | safeJS }}
+  </script>
+{{ else }}
+  {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "{{ (site.GetPage .Section).Title | safeJS }}",
+    "name": "{{ .Title | safeJS }}",
+    "headline": "{{ .Title | safeJS }}",
+    {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
+    {{ with .Site.LanguageCode }}"inLanguage": "{{ . }}",{{ end }}
+    "url" : {{ .Permalink }},
+    "author" : {
+      "@type": "Person",
+      "name": "{{ .Site.Params.Author.name | safeJS }}"
+    },
+    {{ with .PublishDate }}"copyrightYear": "{{ .Format "2006" }}",{{ end }}
+    {{ with .Date }}"dateCreated": "{{ .Format $iso8601 }}",{{ end }}
+    {{ with .PublishDate }}"datePublished": "{{ .Format $iso8601 }}",{{ end }}
+    {{ with .ExpiryDate }}"expires": "{{ .Format $iso8601 }}",{{ end }}
+    {{ with .Lastmod }}"dateModified": "{{ .Format $iso8601 }}",{{ end }}
+    {{ if .Keywords }}
+    {{ with .Keywords }}"keywords": {{ . }},{{ end }}
+    {{ else }}
+    {{ with .Params.tags }}"keywords": {{ . }},{{ end }}
+    {{ end }}
+    "mainEntityOfPage": "true",
+    "wordCount": "{{ .WordCount }}"
+  }{{ if site.Params.enableStructuredBreadcrumbs | default false }},
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{- $position := 0 -}}
+      {{- range .Ancestors -}}
+        {{- if not .IsHome -}}
+          {{- $position = add $position 1 -}}
+          {
+            "@type": "ListItem",
+            "position": {{ $position }},
+            "name": "{{ .Title }}",
+            "item": {{ .Permalink }}
+          },
+        {{- end -}}
+      {{- end -}}
+      {{- $position = add $position 1 -}}
+      {
+        "@type": "ListItem",
+        "position": {{ $position }},
+        "name": "{{ .Title }}",
+        "item": {{ .Permalink }}
+      }
+    ]
+  }{{ end }}]
+  </script>
+{{ end }}
