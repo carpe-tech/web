@@ -1,5 +1,6 @@
 ---
 title: "January Meeting — Open forum & show your project"
+description: "CARPE Raspberry Pi, Arduino, ESP32 & microcontroller meetup — Tue, Jan 12, 2027, 6:30 PM at Worthington Park Library, Worthington, OH. Free, all skill levels welcome."
 date: 2027-01-12T18:30:00-05:00
 endDate: 2027-01-12T20:30:00-05:00
 location: "Worthington Park Library — Olentangy Meeting Room · 1389 Worthington Centre Dr, Worthington, OH"
