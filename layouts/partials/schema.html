@@ -29,7 +29,7 @@
   <script type="application/ld+json">
   {{ dict "@context" "https://schema.org" "@graph" (slice $website $org) | jsonify | safeJS }}
   </script>
-{{ else if and .IsPage (eq .Section "meetings") -}}
+{{ else if and .IsPage (eq .Section "meetings") (not .Params.noMeeting) -}}
   {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
   {{- $loc := .Params.location | default "Columbus, OH" -}}
   {{- $parts := split $loc " · " -}}

@@ -4,8 +4,10 @@
 {{ $past := $split.past }}
 {{ $next := "" }}
 {{ $isUpcoming := false }}
-{{ if gt (len $upcoming) 0 }}
-  {{ $next = index $upcoming 0 }}
+{{/* Skip "no meeting" notices — the homepage should name the next real meeting. */}}
+{{ $realUpcoming := where $upcoming "Params.noMeeting" "!=" true }}
+{{ if gt (len $realUpcoming) 0 }}
+  {{ $next = index $realUpcoming 0 }}
   {{ $isUpcoming = true }}
 {{ else if gt (len $past) 0 }}
   {{ $next = index $past 0 }}

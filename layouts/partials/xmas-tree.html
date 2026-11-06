@@ -1,0 +1,73 @@
+{{/* Circuit-board Christmas tree for "no meeting" holiday notices.
+
+     Call with: (dict "class" "<classes>" "width" "<optional CSS width, e.g. 13rem>")
+
+     PCB traces branch off a central bus to LED "ornaments" that twinkle
+     (disabled under prefers-reduced-motion); the trunk is a DIP chip and the
+     star sits on top. Colours are fixed so it reads in light and dark mode.
+*/ -}}
+<svg class="xmas-tree {{ .class }}"{{ with .width }} style="width:{{ . }};height:auto"{{ end }} viewBox="0 0 200 230" role="img" aria-label="Christmas tree drawn as a circuit board, with blinking LED ornaments and a chip for a trunk" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .xmas-tree .led { animation: xmas-twinkle 1.8s ease-in-out infinite alternate; }
+    .xmas-tree .led:nth-of-type(3n)   { animation-delay: -0.6s; }
+    .xmas-tree .led:nth-of-type(3n+1) { animation-delay: -1.2s; }
+    @keyframes xmas-twinkle { from { opacity: 0.35; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .xmas-tree .led { animation: none; } }
+  </style>
+  <defs>
+    <filter id="xmas-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Board outline (tree silhouette) -->
+  <polygon points="100,22 140,80 120,80 155,130 132,130 170,182 30,182 68,130 45,130 80,80 60,80"
+           fill="#16a34a" fill-opacity="0.12" stroke="#16a34a" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- Traces: central bus with 45° branches to each LED -->
+  <g fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 34 V188"/>
+    <path d="M100 52 L88 64"/>
+    <path d="M100 62 H106 L114 70"/>
+    <path d="M100 92 H90 L80 102"/>
+    <path d="M100 98 L120 98 L126 104"/>
+    <path d="M100 116 L108 124"/>
+    <path d="M100 140 H80 L64 156"/>
+    <path d="M100 146 L92 154 V160"/>
+    <path d="M100 136 H124 L140 152 V158"/>
+    <path d="M100 164 L112 170"/>
+  </g>
+  <!-- Vias -->
+  <g fill="#0f172a" stroke="#facc15" stroke-width="1.6">
+    <circle cx="100" cy="52" r="2.4"/><circle cx="100" cy="92" r="2.4"/>
+    <circle cx="100" cy="116" r="2.4"/><circle cx="100" cy="140" r="2.4"/>
+    <circle cx="100" cy="164" r="2.4"/>
+  </g>
+
+  <!-- LED ornaments -->
+  <g filter="url(#xmas-glow)">
+    <circle class="led" cx="88"  cy="64"  r="5" fill="#ef4444"/>
+    <circle class="led" cx="114" cy="70"  r="5" fill="#facc15"/>
+    <circle class="led" cx="80"  cy="102" r="5" fill="#3b82f6"/>
+    <circle class="led" cx="126" cy="104" r="5" fill="#ef4444"/>
+    <circle class="led" cx="108" cy="124" r="5" fill="#a855f7"/>
+    <circle class="led" cx="64"  cy="156" r="5" fill="#facc15"/>
+    <circle class="led" cx="92"  cy="160" r="5" fill="#ef4444"/>
+    <circle class="led" cx="140" cy="158" r="5" fill="#3b82f6"/>
+    <circle class="led" cx="112" cy="170" r="5" fill="#22d3ee"/>
+  </g>
+
+  <!-- Star -->
+  <polygon filter="url(#xmas-glow)" fill="#facc15" stroke="#ca8a04" stroke-width="1"
+           points="100,4 102.9,12 111.4,12.3 104.8,17.6 107.1,25.7 100,21 92.9,25.7 95.2,17.6 88.6,12.3 97.1,12"/>
+
+  <!-- Trunk: DIP chip -->
+  <g stroke="#9ca3af" stroke-width="2" stroke-linecap="round">
+    <path d="M82 194 H78 M82 202 H78 M82 210 H78 M82 218 H78"/>
+    <path d="M118 194 H122 M118 202 H122 M118 210 H122 M118 218 H122"/>
+  </g>
+  <rect x="82" y="188" width="36" height="36" rx="3" fill="#1f2937" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="88" cy="194" r="1.8" fill="#9ca3af"/>
+  <text x="100" y="210" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="8" font-weight="700" fill="#e5e7eb">XMAS</text>
+</svg>

@@ -7,6 +7,12 @@
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">{{ .Title | emojify }}</h1>
     </header>
 
+    {{ if .Params.noMeeting }}
+    <div class="mt-6 flex flex-col items-center gap-3">
+      {{ partial "xmas-tree.html" (dict "width" "13rem") }}
+      <p class="text-neutral-500 dark:text-neutral-300">🗓️ {{ .Date.Format "Monday, January 2, 2006" }}</p>
+    </div>
+    {{ else }}
     <div class="mt-4 rounded-xl border border-neutral-300 dark:border-neutral-700 p-5 space-y-1.5">
       <p>🗓️ <strong>{{ .Date.Format "Monday, January 2, 2006" }}</strong> · {{ .Date.Format "3:04 PM" }}{{ with .Params.endDate }} – {{ (time .).Format "3:04 PM" }}{{ end }}</p>
       {{ with .Params.location }}
@@ -20,6 +26,7 @@
       {{ partial "add-to-calendar.html" (dict "page" $ "class" "pt-1") }}
       {{ partial "hands-on-note.html" (dict "page" $ "class" "pt-1") }}
     </div>
+    {{ end }}
 
     <section class="mt-8 prose prose-lg dark:prose-invert max-w-none">
       {{ .Content }}

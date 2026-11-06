@@ -9,6 +9,7 @@
 
      Past is capped at the 4 most recent so the Meetings page doesn't grow without
      bound at two meetings a month. Upcoming is uncapped — we never have many.
+     "No meeting" notices (noMeeting: true) are dropped from past entirely.
 */ -}}
 {{- $pastLimit := 4 -}}
 {{- $nowUnix := now.Unix -}}
@@ -19,7 +20,7 @@
   {{- with .Params.endDate }}{{ $end = time . }}{{ end -}}
   {{- if ge $end.Unix $nowUnix -}}
     {{- $upcoming = $upcoming | append . -}}
-  {{- else -}}
+  {{- else if not .Params.noMeeting -}}
     {{- $past = $past | append . -}}
   {{- end -}}
 {{- end -}}
