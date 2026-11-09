@@ -73,7 +73,7 @@ hobbyists.
   electronic components directly in your browser.
 - **[LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)**
   — Free SPICE simulator for analog circuits, power supplies, and signal analysis.
-- **[TI WEBENCH Power Designer](https://www.digikey.com/en/product-highlight/t/texas-instruments/webench-design-center)**
+- **[TI WEBENCH Power Designer](https://www.ti.com/tool/WEBENCH-CIRCUIT-DESIGNER)**
   — Design and simulate power supplies using Texas Instruments components.
 
 ### PCB Design & Components
