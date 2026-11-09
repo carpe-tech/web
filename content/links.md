@@ -59,3 +59,51 @@ to have nearby.)
   — 3D printers in stock at the Columbus store.
 - **[3D Printing Supplies & Parts](https://www.microcenter.com/search/search_results.aspx?fq=category%3A3D+Printing%7C748&storeid=141)**
   — Filament, resin, nozzles, build surfaces, replacement parts, tools, and accessories.
+
+## Electronics Design & Learning Resources
+
+Useful online tools and references for electronics enthusiasts, makers, students, and
+hobbyists.
+
+### Circuit Simulation & Design
+
+- **[Falstad Circuit Simulator](https://falstad.com/circuit/)** — Interactive circuit
+  simulator for experimenting with analog and digital circuits.
+- **[Wokwi](https://wokwi.com/)** — Simulate Arduino, ESP32, Raspberry Pi Pico, and
+  electronic components directly in your browser.
+- **[LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)**
+  — Free SPICE simulator for analog circuits, power supplies, and signal analysis.
+- **[TI WEBENCH Power Designer](https://www.ti.com/design-development/design-tools-simulation/webench-power-designer.html)**
+  — Design and simulate power supplies using Texas Instruments components.
+
+### PCB Design & Components
+
+- **[KiCad](https://www.kicad.org/)** — Free, open-source software for schematic capture
+  and printed circuit board design.
+- **[EasyEDA](https://easyeda.com/)** — Browser-based schematic capture and PCB layout
+  tools.
+- **[SnapMagic Search](https://www.snapeda.com/)** — Find schematic symbols, PCB
+  footprints, and 3D models for electronic components.
+- **[Octopart](https://octopart.com/)** — Search, compare, and locate electronic
+  components from distributors.
+- **[AllDatasheet](https://www.alldatasheet.com/)** — Search for datasheets and technical
+  specifications for electronic components.
+
+### Learning & Reference
+
+- **[Wolfram Demonstrations Project](https://demonstrations.wolfram.com/)** — Interactive
+  demonstrations of engineering, electronics, mathematics, and physics concepts.
+- **[DigiKey Electronics Calculators](https://www.digikey.com/en/resources/online-conversion-calculators)**
+  — Calculators for Ohm's law, resistor values, filters, voltage dividers, and other
+  electronics applications.
+- **[Virtual Labs](https://www.vlab.co.in/)** — Educational virtual laboratory experiments
+  covering electrical and electronics engineering, including power electronics.
+- **[Raspberry Pi Pinout](https://pinout.xyz/)** — Interactive GPIO pin reference for
+  Raspberry Pi boards.
+
+### Community & Open-Source Projects
+
+- **[EEVblog Electronics Forum](https://www.eevblog.com/forum/)** — Active electronics
+  community for troubleshooting, design discussions, and project advice.
+- **[GitHub](https://github.com/)** — Discover open-source electronics projects,
+  microcontroller firmware, libraries, and hardware designs.
